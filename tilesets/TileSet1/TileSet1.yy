@@ -1,0 +1,43 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"TileSet1",
+  "autoTileSets":[
+    {"$GMAutoTileSet":"","%Name":"floor","closed_edge":false,"name":"floor","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+        12,28,27,30,16,20,49,32,17,50,9,31,19,42,43,52,11,26,15,48,1,5,6,8,13,18,29,51,23,39,38,41,14,34,44,
+        4,2,7,24,40,22,37,3,33,25,35,36,
+      ],},
+  ],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"TileSet1",
+  "out_columns":7,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Tile Sets",
+    "path":"folders/Tile Sets.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"RocksAutoTiles",
+    "path":"sprites/RocksAutoTiles/RocksAutoTiles.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":16,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":16,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":55,
+}

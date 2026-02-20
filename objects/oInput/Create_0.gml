@@ -1,0 +1,29 @@
+keyboardControlScheme = 0 
+jumpScheme = vk_space;
+attackScheme = ord("Z");
+castScheme = ord("X");
+
+pausePressed = keyboard_check_pressed(vk_escape);
+selectKey = keyboard_check_pressed(vk_enter) or keyboard_check_pressed(ord("Z"));
+selectKeyHeld = keyboard_check(vk_enter) or keyboard_check(ord("Z"));
+restartKey = keyboard_check_pressed(ord("R"));
+debugKey = keyboard_check_pressed(ord("D"));
+upKey = keyboard_check(vk_up);
+upKeyPressed = keyboard_check_pressed(vk_up);
+downKey = keyboard_check(vk_down);
+downKeyPressed = keyboard_check_pressed(vk_down);
+leftKey = keyboard_check(vk_left);
+leftKeyPressed = keyboard_check_pressed(vk_left);
+rightKey = keyboard_check(vk_right);
+rightKeyPressed = keyboard_check_pressed(vk_right);
+jumpKeyHeld = keyboard_check(jumpScheme);
+jumpKey = keyboard_check_pressed(jumpScheme);
+attackKey = keyboard_check_pressed(attackScheme);
+castKey = keyboard_check_pressed(castScheme);
+castKeyHeld = keyboard_check(castScheme);
+blowupkey = keyboard_check(vk_enter);
+stompKey = 0;
+backKey = keyboard_check_pressed(vk_escape);
+
+global.gamepads = [];
+global.gamepadMain = noone;

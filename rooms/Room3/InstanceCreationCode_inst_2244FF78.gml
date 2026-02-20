@@ -1,0 +1,1 @@
+goto = Room2;
