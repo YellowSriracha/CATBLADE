@@ -20,12 +20,12 @@ switch(state){
 
 		if global.unlockables.jump{
 			jumpBuffer = global.input.jumpKey;	
-			state = PlayerState.AIR;
+			stateChange(PlayerState.AIR);
 		}
 		
 		move();
 		if onWall {
-			state = PlayerState.WALL;
+			stateChange(PlayerState.AIR);
 		} else if !onGround() {
 			stateChange(PlayerState.AIR);
 		}
@@ -38,7 +38,7 @@ switch(state){
 		applyXInput();
 		move();
 		if onWall {
-			state = PlayerState.WALL;
+			stateChange(PlayerState.WALL);
 		} else if onGround(){
 			state = PlayerState.GROUND;
 		}
@@ -69,8 +69,8 @@ switch(state){
 		image_index = frameData.air.hold;
 		move();
 		dir = sign(xsp);
-		xsp = lerp(xsp,0,0.03);	
-		ysp = lerp(ysp,0,0.03);	
+		xsp = lerp(xsp,0,0.04);	
+		ysp = lerp(ysp,0,0.04);	
 	break;
 }
 
@@ -83,17 +83,19 @@ if  inputXdir != 0{
 
 
 if global.unlockables.slash == 1 and !slashing{
-	targetEnemy = collision_circle(x,y,100,oEnemy,0,1);
+	targetEnemy = collision_circle(x,y,70,oEnemy,0,1);
 	if inputA and instance_exists(targetEnemy){
-		scrPlaySound(sfxCatAngry);
-		scrPlaySound(sfxSlice);
-		slashing = true;
-		onWall = false;
-		var _angle = point_direction(x,y,targetEnemy.x,targetEnemy.y);
-		xsp = lengthdir_x(slashspeed,_angle);
-		ysp = lengthdir_y(slashspeed,_angle);
-		alarm[0] = 30;
+		if targetEnemy.alive{
+			scrPlaySound(sfxCatAngry);
+			scrPlaySound(sfxSlice);
+			slashing = true;
+			onWall = false;
+			var _angle = point_direction(x,y,targetEnemy.x,targetEnemy.y);
+			xsp = lengthdir_x(slashspeed,_angle);
+			ysp = lengthdir_y(slashspeed,_angle);
+			alarm[0] = 30;
 		
-		state = PlayerState.SLASH;
+			state = PlayerState.SLASH;
+		}
 	}
 }
