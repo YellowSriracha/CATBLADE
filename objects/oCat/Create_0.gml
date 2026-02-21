@@ -84,46 +84,52 @@ function move(){
 		if place_meeting(x+xsp,y,collidables) {
 			snapToWall()
 			xsp = 0;
+
 			if global.unlockables.climb{
+				ysp = 0
 				onWall = true;
 			}
+		}
+		x += xsp;
 		//Y collision
-		} else if place_meeting(x,y+ysp,collidables){
+		if place_meeting(x,y+ysp,collidables){
 			if ysp > 0 and !onGround(){
 				snapToGround();
 			}
 			ysp = 0;
 		}
-	}
-	
-	
-	if onWall {
+		y+=ysp;
+	} else if onWall {
 		xsp = 0;	
 		
 		//Y Collision
 		if place_meeting(x,y+ysp,collidables) {
 			ysp = 0;	
 			if ysp > 0 {
-			onWall = false;
-			if ysp >0 {
-				snapToGround();
-			}
+				onWall = false;
+				if ysp >0 {
+					snapToGround();
+				}
 			}
 		}
 		//If not facing wall, let go
 		if !place_meeting(x+dir,y+ysp,collidables){
 			onWall = false;	
 		}
+		y+=ysp;
 	}
-	x += xsp;
-	y+= ysp;
 }
 
 function stateChange(_state){
 	switch(state){
 		case PlayerState.AIR:
+			//dir = inputXdir;
 			image_index = frameData.air.hold;
 			image_xscale = inputXdir
+		break;
+		case PlayerState.WALL:
+			dir = inputXdir;
+			image_index = frameData.wall.hold;
 		break;
 	}
 	state = _state;	
@@ -204,16 +210,16 @@ function onGround(){
 function SetSpawnPoint(){
 	if global.mapController.roomSide % 2 == 0 {
 		if global.mapController.roomSide == 2 {
-			x = 10;
+			x = 20;
 		} else {
-			x = room_width - 10;	
+			x = room_width - 20;	
 		}
 		y = global.mapController.roomSpawnY;
 	} else {
 		if global.mapController.roomSide == 1 {
-			y = 10;
+			y = 20;
 		} else {
-			y = room_height - 10;	
+			y = room_height - 20;	
 		}
 		x = global.mapController.roomSpawnX;	
 	}

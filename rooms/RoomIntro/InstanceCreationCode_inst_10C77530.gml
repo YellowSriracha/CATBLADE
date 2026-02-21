@@ -1,1 +1,1 @@
-goto = RoomAA;
+goto = RoomChallengeNoClimb;

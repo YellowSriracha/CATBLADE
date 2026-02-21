@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sCat14",
-    "path":"sprites/sCat14/sCat14.yy",
+    "name":"sCatAlt",
+    "path":"sprites/sCatAlt/sCatAlt.yy",
   },
   "spriteMaskId":null,
   "visible":true,

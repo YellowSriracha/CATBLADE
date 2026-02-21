@@ -9,3 +9,11 @@ if keyboard_check_pressed(ord("U")){
 		slash = 1;
 	}
 }
+
+if keyboard_check_pressed(ord("N")){
+	room_goto_next();
+}
+
+if keyboard_check_pressed(ord("P")){
+	room_goto_previous();
+}
