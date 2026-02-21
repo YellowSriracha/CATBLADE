@@ -12,12 +12,12 @@
   "isDnd":false,
   "layers":[
     {"$GMRTileLayer":"","%Name":"CollisionMap","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"CollisionMap","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
-          1,16,-28,23,1,17,-10,12,1,13,-28,0,1,22,-10,23,1,13,-39,0,1,13,-39,0,1,13,-39,0,1,13,-39,0,1,13,-39,
-          0,1,13,-39,0,1,13,-39,0,1,13,-35,0,5,33,34,34,6,13,-38,0,2,11,13,-38,0,2,11,13,-38,0,2,11,13,-38,0,2,
-          11,13,-38,0,2,11,13,-38,0,2,11,13,-38,0,2,11,13,-38,0,5,11,27,1,1,2,-5,0,1,44,-29,1,1,28,-3,12,1,13,
-          -5,-2147483648,1,11,-33,12,1,13,-5,-2147483648,1,11,-33,12,1,13,-5,-2147483648,1,11,-33,12,1,13,-5,-2147483648,
-          1,11,-30,12,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+          1,4,-28,28,1,8,-10,47,1,24,-28,0,1,40,-10,28,1,24,-39,0,1,24,-39,0,1,24,-39,0,1,24,-39,0,1,24,-39,0,
+          1,24,-39,0,1,24,-39,0,1,24,-35,0,5,43,33,33,22,24,-38,0,2,16,24,-38,0,2,16,24,-38,0,2,16,24,-38,0,2,
+          16,24,-38,0,2,16,24,-38,0,2,16,24,-38,0,2,16,24,-38,0,5,16,2,20,20,36,-5,0,1,34,-29,20,1,1,-3,47,1,24,
+          -5,-2147483648,1,16,-33,47,1,24,-5,-2147483648,1,16,-33,47,1,24,-5,-2147483648,1,16,-33,47,1,24,-5,-2147483648,
+          1,16,-30,47,
+        ],"TileDataFormat":1,},"tilesetId":{"name":"TileSetCustom","path":"tilesets/TileSetCustom/TileSetCustom.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_F0F0932","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_F0F0932","objectId":{"name":"oCat","path":"objects/oCat/oCat.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":468.0,"y":280.0,},
         {"$GMRInstance":"v2","%Name":"inst_10C77530","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_10C77530","objectId":{"name":"oRoomTransition","path":"objects/oRoomTransition/oRoomTransition.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.359375,"scaleY":1.0,"x":25.0,"y":368.0,},

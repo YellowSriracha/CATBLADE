@@ -59,6 +59,11 @@
     {"name":"sTarget","order":7,"path":"sprites/sTarget/sTarget.yy",},
     {"name":"sZoneDark","order":2,"path":"sprites/sZoneDark/sZoneDark.yy",},
     {"name":"sZoneRed","order":1,"path":"sprites/sZoneRed/sZoneRed.yy",},
+    {"name":"tilesetTesting","order":7,"path":"sprites/tilesetTesting/tilesetTesting.yy",},
+    {"name":"tilesetTesting18","order":8,"path":"sprites/tilesetTesting18/tilesetTesting18.yy",},
+    {"name":"tilesetTesting19","order":9,"path":"sprites/tilesetTesting19/tilesetTesting19.yy",},
+    {"name":"tilesetTesting20","order":10,"path":"sprites/tilesetTesting20/tilesetTesting20.yy",},
     {"name":"TileSet1","order":4,"path":"tilesets/TileSet1/TileSet1.yy",},
+    {"name":"TileSetCustom","order":6,"path":"tilesets/TileSetCustom/TileSetCustom.yy",},
   ],
 }
