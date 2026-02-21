@@ -54,6 +54,7 @@
     {"name":"RoomClimb","order":8,"path":"rooms/RoomClimb/RoomClimb.yy",},
     {"name":"RoomEnd","order":9,"path":"rooms/RoomEnd/RoomEnd.yy",},
     {"name":"RoomIntro","order":7,"path":"rooms/RoomIntro/RoomIntro.yy",},
+    {"name":"scrDrawPixelOutlineShader","order":3,"path":"scripts/scrDrawPixelOutlineShader/scrDrawPixelOutlineShader.yy",},
     {"name":"scrSound","order":2,"path":"scripts/scrSound/scrSound.yy",},
     {"name":"scrStateToString","order":1,"path":"scripts/scrStateToString/scrStateToString.yy",},
     {"name":"scrVectors","order":3,"path":"scripts/scrVectors/scrVectors.yy",},
