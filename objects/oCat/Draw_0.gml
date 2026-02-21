@@ -6,6 +6,6 @@ if state == PlayerState.WALL {
 }
 if instance_exists(targetEnemy){
 	if targetEnemy.alive{
-		draw_sprite(sTarget,0,targetEnemy.x,targetEnemy.y);
+		//draw_sprite(sTarget,0,targetEnemy.x,targetEnemy.y);
 	}
 }
