@@ -9,6 +9,7 @@ uniform vec4 u_borderColor;
 uniform float u_alphaThresholdCreature;
 uniform float u_numberOfTransparentPixelNeighborsForFullOutline;
 uniform float u_minimumNumberOfTransparentNeighborsForOutline;
+uniform vec4 u_uvCorners; // in order of left, top, right, bottom
 
 void main()
 {
@@ -50,6 +51,17 @@ void main()
 	 float upRightCounter    = 1.0 - step(u_alphaThresholdCreature, upRightFragmentAlpha);
 	 float downLeftCounter = 1.0 - step(u_alphaThresholdCreature, downLeftFragmentAlpha);
 	 float downRightCounter= 1.0 - step(u_alphaThresholdCreature, downRightFragmentAlpha);
+	 
+	 float maxUvLeft = u_uvCorners[0];
+	 float maxUvTop = u_uvCorners[1];
+	 float maxUvRight = u_uvCorners[2];
+	 float maxUvBottom = u_uvCorners[3];
+	 
+	 float isCurrentPixelAtTheLeftOfTheSprite =   step(uv.x - u_texel.x, maxUvLeft);	 
+	 float isCurrentPixelAtTheTopOfTheSprite =    step(uv.y - u_texel.y, maxUvTop);
+	 float isCurrentPixelAtTheRightOfTheSprite =  step(maxUvRight, uv.x + u_texel.x);
+	 float isCurrentPixelAtTheBottomOfTheSprite = step(maxUvBottom, uv.y + u_texel.y);
+
 
 	 transparencyCounters += upLeftCounter
 		+ upRightCounter
@@ -58,7 +70,11 @@ void main()
 		+ leftCounter
 		+ rightCounter
 		+ upCounter
-		+ downCounter;
+		+ downCounter
+		+ isCurrentPixelAtTheLeftOfTheSprite
+		+ isCurrentPixelAtTheTopOfTheSprite
+		+ isCurrentPixelAtTheRightOfTheSprite
+		+ isCurrentPixelAtTheBottomOfTheSprite;
 		
 	 bool transparencyCounterThresholdMet = transparencyCounters >= u_minimumNumberOfTransparentNeighborsForOutline;
 	 float mixStrength = clamp(transparencyCounters / u_numberOfTransparentPixelNeighborsForFullOutline, 0.0, 1.0);

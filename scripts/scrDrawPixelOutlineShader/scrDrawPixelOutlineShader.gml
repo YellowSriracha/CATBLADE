@@ -15,6 +15,7 @@ function SetBorderOutlineShader(_sprite_index, _image_index, _alphaThreshold, _b
         global.__outline_u_alphaThreshold = shader_get_uniform(shPixelOutline, "u_alphaThresholdCreature");
         global.__outline_u_fullNeighbors = shader_get_uniform(shPixelOutline, "u_numberOfTransparentPixelNeighborsForFullOutline");
         global.__outline_u_minNeighbors  = shader_get_uniform(shPixelOutline, "u_minimumNumberOfTransparentNeighborsForOutline");
+		global.__outline_u_uvCorners  = shader_get_uniform(shPixelOutline, "u_uvCorners");
     }
 
     // Texel size for the actual texture backing this sprite frame (atlas-correct)
@@ -25,7 +26,13 @@ function SetBorderOutlineShader(_sprite_index, _image_index, _alphaThreshold, _b
     // Border color (GM color -> 0..1)
     var r = color_get_red(_borderColor)   / 255.0;
     var g = color_get_green(_borderColor) / 255.0;
-    var b = color_get_blue(_borderColor)  / 255.0;
+    var b = color_get_blue(_borderColor)  / 255.0
+	
+	var uvs = sprite_get_uvs(_sprite_index, _image_index);
+	var uvLeft = uvs[0];
+	var uvTop = uvs[1];
+	var uvRight = uvs[2];
+	var uvBottom = uvs[3];
 
     // Draw with shader
     gpu_set_texfilter(false); // crisp pixel outline; remove if you want filtering
@@ -36,4 +43,5 @@ function SetBorderOutlineShader(_sprite_index, _image_index, _alphaThreshold, _b
     shader_set_uniform_f(global.__outline_u_alphaThreshold, _alphaThreshold);
     shader_set_uniform_f(global.__outline_u_fullNeighbors, _numTransparentForFull);
     shader_set_uniform_f(global.__outline_u_minNeighbors, _minTransparentForOutline);
+	shader_set_uniform_f(global.__outline_u_uvCorners, uvLeft, uvTop, uvRight, uvBottom);
 }
