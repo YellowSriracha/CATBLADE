@@ -16,8 +16,8 @@ var _ypos = (_dheight / 2) - 450;
 window_set_rectangle(100, 100, display_get_width()*0.75,display_get_height()*0.75);
 display_set_gui_size(1920,1080)
 
-var base_w = 1024;
-var base_h = 768;
+var base_w = 640;
+var base_h = 360;
 var max_w = display_get_width();
 var max_h = display_get_height();
 var aspect = display_get_width() / display_get_height();
