@@ -2,13 +2,14 @@
 #macro defaultgrav 0.1
 #macro slashspeed 10
 #macro tilewidth 16
-climbSpeed = 2;
+climbSpeed = 1;
 //Player Inputs
 inputR = 0;
 inputL = 0;
 inputU = 0;
 inputD = 0;
 inputA = 0;
+inputM = 0;
 inputXdir = 0;
 inputYdir = 0;
 
@@ -19,17 +20,22 @@ jumpBuffer = false;
 
 //Targeting and Attacking flags
 targetEnemy = noone;
+slashesReady = 0;
 slashing = false;
 
 //Pause flag
 paused = false;
+slowmoActive = false;
+slowmoDuration = 120;
 
+storedState = PlayerState.GROUND;
 //State
 enum PlayerState {
 	GROUND,
 	AIR,
 	WALL,
-	SLASH
+	SLASH,
+	PAUSED
 }
 state = PlayerState.GROUND;
 
@@ -61,12 +67,13 @@ frameData = {
 	}
 }
 
+respawnPointX = x;
+respawnPointY = y;
 //Spawn in in a room transition is occurring
 if global.roomTransition {
 	SetSpawnPoint();
 }
-respawnPointX = x;
-respawnPointY = y;
+
 
 
 //Collision object pointers
@@ -78,6 +85,7 @@ collidables = [collisionMapID, oGround];
 function move(){
 	if !onWall {
 		if !onGround(){
+			
 			ysp += grav;
 		}
 		//X Collision
@@ -121,15 +129,38 @@ function move(){
 }
 
 function stateChange(_state){
-	switch(state){
+	image_speed = 1;
+	switch(_state){
+		case PlayerState.GROUND:
+			slashesReady = 1;
+			if global.unlockables.doubleslash{
+				slashesReady = 2;	
+			}
+			image_index = frameData.idle.first;
+		break;
 		case PlayerState.AIR:
 			//dir = inputXdir;
 			image_index = frameData.air.hold;
-			image_xscale = inputXdir
+			image_xscale = inputXdir == 0 ? dir : inputXdir;
 		break;
 		case PlayerState.WALL:
 			dir = inputXdir;
 			image_index = frameData.wall.hold;
+		break;
+		case PlayerState.SLASH:
+			scrPlaySound(sfxCatAngry);
+			scrPlaySound(sfxSlice);
+			slashesReady -= 1;
+			slashing = true;
+			onWall = false;
+			var _angle = point_direction(x,y,targetEnemy.x,targetEnemy.y);
+			xsp = lengthdir_x(slashspeed,_angle);
+			ysp = lengthdir_y(slashspeed,_angle);
+			alarm[0] = 30;
+		break;
+		case PlayerState.PAUSED:
+			image_speed = 0;
+			storedState = state;
 		break;
 	}
 	state = _state;	
@@ -233,4 +264,13 @@ function die(){
 	scrPlaySound(sfxDeathMeow)
 	x = respawnPointX;
 	y = respawnPointY;
+	scrOnDeath();
 }	
+
+function pause() {
+	stateChange(PlayerState.PAUSED);
+}
+
+function unpause() {
+	stateChange(storedState);
+}

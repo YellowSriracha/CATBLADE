@@ -13,3 +13,7 @@ draw_text(01,260,"XSP:" + string(oCat.xsp));
 draw_text(01,290,"YSP:" + string(oCat.ysp));
 draw_text(01,310,"Xinput:" + string(oCat.inputXdir));
 draw_text(01,340,"Yinput:" + string(oCat.inputYdir));
+
+draw_text(01,390,"Slashes Ready:" + string(oCat.slashesReady));
+
+draw_text(01,420,"Map Location: [" + string(global.mapIndex[0]) + "] [" + string(global.mapIndex[1]) + "]");

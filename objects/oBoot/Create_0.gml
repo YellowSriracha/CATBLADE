@@ -7,6 +7,8 @@ global.soundSystem = instance_create_layer(0,0,layer,oSoundSystem);
 global.debugOverlay = instance_create_layer(0,0,layer,oCatDebug);
 global.debugControls = instance_create_layer(0,0,layer,oDebugControls);
 
+global.gamespeed = 60;
+
 
 //SET WINDOW AND
 var _dwidth = display_get_width();

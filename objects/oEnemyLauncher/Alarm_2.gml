@@ -22,5 +22,6 @@ with _this {
 	x += lengthdir_x(5,angle);
 	y += lengthdir_y(5,angle);
 	setVelocity();
-	scrPlaySound(sfxLaser)
+	var _pitch = oCat.slowmoActive ? 0.5:1;
+	scrPlaySound(sfxLaser,,,_pitch);
 }

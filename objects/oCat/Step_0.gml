@@ -6,8 +6,9 @@ inputU = global.input.upKey;
 inputD = global.input.downKey;
 
 inputA = global.input.attackKey;
+inputM = global.input.castKey;
 
-
+if global.unlockables.fastclimb climbSpeed = 2;
 switch(state){
 	case PlayerState.GROUND:
 		if xsp == 0{
@@ -25,7 +26,7 @@ switch(state){
 		
 		move();
 		if onWall {
-			stateChange(PlayerState.AIR);
+			stateChange(PlayerState.WALL);
 		} else if !onGround() {
 			stateChange(PlayerState.AIR);
 		}
@@ -40,7 +41,7 @@ switch(state){
 		if onWall {
 			stateChange(PlayerState.WALL);
 		} else if onGround(){
-			state = PlayerState.GROUND;
+			stateChange(PlayerState.GROUND);
 		}
 		
 	break;
@@ -68,9 +69,13 @@ switch(state){
 	case PlayerState.SLASH:
 		image_index = frameData.air.hold;
 		move();
-		dir = sign(xsp);
-		xsp = lerp(xsp,0,0.04);	
-		ysp = lerp(ysp,0,0.04);	
+		if onWall {
+			alarm[0] = 1;
+		} else {
+			dir = sign(xsp);
+			xsp = lerp(xsp,0,0.04);	
+			ysp = lerp(ysp,0,0.04);	
+		}
 	break;
 }
 
@@ -82,20 +87,25 @@ if  inputXdir != 0{
 
 
 
-if global.unlockables.slash == 1 and !slashing{
+if global.unlockables.slash == 1 and !slashing and slashesReady > 0{
 	targetEnemy = collision_circle(x,y,70,oEnemy,0,1);
 	if inputA and instance_exists(targetEnemy){
 		if targetEnemy.alive{
-			scrPlaySound(sfxCatAngry);
-			scrPlaySound(sfxSlice);
-			slashing = true;
-			onWall = false;
-			var _angle = point_direction(x,y,targetEnemy.x,targetEnemy.y);
-			xsp = lengthdir_x(slashspeed,_angle);
-			ysp = lengthdir_y(slashspeed,_angle);
-			alarm[0] = 30;
-		
-			state = PlayerState.SLASH;
+			stateChange(PlayerState.SLASH)
 		}
+	}
+}
+
+if !slowmoActive{
+	if inputM and global.unlockables.slowmo{
+		slowmoActive = true;	
+		scrStartSlowMo();
+	}
+} else {
+	slowmoDuration -=1;
+	if slowmoDuration <= 0{
+		slowmoActive = false;	
+		slowmoDuration= 120;
+		scrEndSlowMo();
 	}
 }

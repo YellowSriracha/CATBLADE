@@ -8,5 +8,9 @@ function scrPlayerStateToString(_state){
 			return "Slash";
 		case PlayerState.WALL:
 			return "Wall";
+		case PlayerState.PAUSED:
+			return "Paused";
+		default:
+			return "???";
 	}
 }
