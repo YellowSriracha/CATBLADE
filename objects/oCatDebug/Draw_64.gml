@@ -17,3 +17,5 @@ draw_text(01,340,"Yinput:" + string(oCat.inputYdir));
 draw_text(01,390,"Slashes Ready:" + string(oCat.slashesReady));
 
 draw_text(01,420,"Map Location: [" + string(global.mapIndex[0]) + "] [" + string(global.mapIndex[1]) + "]");
+
+draw_text(01,450,"onCeiling:" + string(oCat.onCeiling));

@@ -38,7 +38,9 @@ switch(state){
 		takeInput();
 		applyXInput();
 		move();
-		if onWall {
+		if onCeiling {
+			stateChange(PlayerState.CEILING);
+		} else if onWall {
 			stateChange(PlayerState.WALL);
 		} else if onGround(){
 			stateChange(PlayerState.GROUND);
@@ -60,10 +62,37 @@ switch(state){
 		
 		if !onWall{
 			image_yscale = 1;
-			stateChange(PlayerState.AIR);
+			if onCeiling {
+				stateChange(PlayerState.CEILING)
+			} else {
+				stateChange(PlayerState.AIR);
+			}
 		} else {
 			image_yscale = (ysp > 0)? -1: 1;	
 		}
+	break;
+	
+	case PlayerState.CEILING:
+		if xsp == 0{
+			scrAnimationLoop(frameData.wall.hold,frameData.wall.hold);
+		}else {
+			scrAnimationLoop(frameData.wallrun.first,frameData.wallrun.last);
+		}
+		ysp = 0;
+		xsp = 0;
+		takeInput();
+		applyXInput();
+		move();
+		
+		if !onCeiling{
+			image_yscale = 1;
+			if !onWall {
+				stateChange(PlayerState.AIR);
+			} else {
+				stateChange(PlayerState.WALL)	
+			}
+		}
+	
 	break;
 	
 	case PlayerState.SLASH:
@@ -79,39 +108,45 @@ switch(state){
 	break;
 }
 
-ysp = clamp(ysp,-8,8);
-if  inputXdir != 0{
-	dir = inputXdir;
-	if !onWall image_xscale = inputXdir;
-}
 
 
+if !paused {
+	ysp = clamp(ysp,-8,8);
+	if  inputXdir != 0{
+		dir = inputXdir;
+		if !onWall image_xscale = inputXdir;
+	}
 
-if global.unlockables.slash == 1 and !slashing and slashesReady > 0{
-	targetEnemy = collision_circle(x,y,70,oEnemy,0,1);
-	if inputA and instance_exists(targetEnemy){
-		if targetEnemy.alive{
-			stateChange(PlayerState.SLASH)
+	if global.unlockables.slash == 1 and !slashing and slashesReady > 0{
+		targetEnemy = collision_circle(x,y,70,oEnemy,0,1);
+		if inputA and instance_exists(targetEnemy){
+			if targetEnemy.alive{
+				stateChange(PlayerState.SLASH)
+			}
+		}
+	}
+
+	if !slowmoActive{
+		if inputM and global.unlockables.slowmo{
+			slowmoActive = true;	
+			scrStartSlowMo();
+		}
+	} else {
+		slowmoDuration -=1;
+		if slowmoDuration <= 0{
+			slowmoActive = false;	
+			slowmoDuration= 120;
+			scrEndSlowMo();
+		}	
+		else
+		{
+			enableSlowMoShader(0.0, 36.0, 0.12);
 		}
 	}
 }
 
-if !slowmoActive{
-	if inputM and global.unlockables.slowmo{
-		slowmoActive = true;	
-		scrStartSlowMo();
-	}
-} else {
-	slowmoDuration -=1;
-	if slowmoDuration <= 0{
-		slowmoActive = false;	
-		slowmoDuration= 120;
-		scrEndSlowMo();
-	}
-	else
-	{
-		enableSlowMoShader(0.0, 36.0, 0.12);
-	}
+if paused and alarm[0] >= 0 {
+	alarm[0] +=1;
 }
 
 updateGlobalPlayerPosition();
