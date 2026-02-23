@@ -4,6 +4,7 @@ path = Path1;
 
 defaultPathSpeed = 2;
 path_speed = defaultPathSpeed;
+storedPathSpeed = path_speed;
 
 path_start(path,path_speed,path_action_continue,0);
 
@@ -17,4 +18,15 @@ startSlowmo = function(){
 	
 endSlowmo = function(){
 	path_speed = defaultPathSpeed;
+}
+
+onPause = function(){
+	storedPathSpeed = path_speed;
+	path_speed = 0;	
+	paused = true;
+}
+
+onUnpause = function(){
+	path_speed = storedPathSpeed;	
+	paused = false;
 }

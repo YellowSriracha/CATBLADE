@@ -16,6 +16,7 @@ inputYdir = 0;
 //Direction and buffers
 dir = 1;
 onWall = false;
+onCeiling = false;
 jumpBuffer = false;
 
 //Targeting and Attacking flags
@@ -35,6 +36,7 @@ enum PlayerState {
 	AIR,
 	WALL,
 	SLASH,
+	CEILING,
 	PAUSED
 }
 state = PlayerState.GROUND;
@@ -84,8 +86,7 @@ collidables = [collisionMapID, oGround];
 //CURSED MOVE FUNCTION NEEDS WORK
 function move(){
 	if !onWall {
-		if !onGround(){
-			
+		if !onGround() and !onCeiling{
 			ysp += grav;
 		}
 		//X Collision
@@ -96,33 +97,51 @@ function move(){
 			if global.unlockables.climb{
 				ysp = 0
 				onWall = true;
+				onCeiling = false;
 			}
 		}
 		x += xsp;
 		//Y collision
+		if onCeiling {
+			if !place_meeting(x,y-1,collidables) or inputYdir == 1{
+				onCeiling = false;	
+				ysp = 0;
+			}
+		}
 		if place_meeting(x,y+ysp,collidables){
 			if ysp > 0 and !onGround(){
 				snapToGround();
 			}
+			if ysp < 0 {
+				snapToCeiling();
+				if global.unlockables.ceilingclimb onCeiling = true;	
+			}
 			ysp = 0;
 		}
+		
 		y+=ysp;
 	} else if onWall {
 		xsp = 0;	
 		
 		//Y Collision
 		if place_meeting(x,y+ysp,collidables) {
-			ysp = 0;	
+			
 			if ysp > 0 {
 				onWall = false;
 				if ysp >0 {
 					snapToGround();
-				}
-			}
+				} 
+			} else if ysp < 0{
+				snapToCeiling();
+			}	
+			ysp = 0;	
 		}
 		//If not facing wall, let go
 		if !place_meeting(x+dir,y+ysp,collidables){
 			onWall = false;	
+			if place_meeting(x,y-1,collidables){
+			onCeiling = true;	
+			}
 		}
 		y+=ysp;
 	}
@@ -144,7 +163,7 @@ function stateChange(_state){
 			image_xscale = inputXdir == 0 ? dir : inputXdir;
 		break;
 		case PlayerState.WALL:
-			dir = inputXdir;
+			dir = inputXdir == 0 ? dir : inputXdir;
 			image_index = frameData.wall.hold;
 		break;
 		case PlayerState.SLASH:
@@ -165,6 +184,7 @@ function stateChange(_state){
 	}
 	state = _state;	
 }
+
 function jumpCheck(){
 	if jumpBuffer {
 		if onWall {
@@ -182,10 +202,12 @@ function takeInput(){
 }
 
 function applyXInput(){
+	var _spd = catwalkspeed;
+	if onCeiling _spd = climbSpeed;
 	if inputXdir == 1 {
-		xsp = catwalkspeed;
+		xsp = _spd;
 	} else if inputXdir == -1 {
-		xsp = -catwalkspeed;
+		xsp = -_spd;
 	} else {
 		xsp =0;	
 	}
@@ -229,6 +251,18 @@ function snapToWall(_dir = dir){
 	return 0;
 }
 
+function snapToCeiling(){
+	var _startY = ceil(y);
+	for (var i = 0; i<tilewidth;i++){
+		if place_meeting(x, _startY-i,collidables){
+			y = _startY-i+1;
+			return 1;
+		}
+	}
+	y = _startY;
+	return 0;
+}
+
 //Returns if player is touching ground
 function onGround(){
 	if place_meeting(x,y+1,collidables){
@@ -269,8 +303,10 @@ function die(){
 
 function pause() {
 	stateChange(PlayerState.PAUSED);
+	paused = true;
 }
 
 function unpause() {
+	paused = false;
 	stateChange(storedState);
 }

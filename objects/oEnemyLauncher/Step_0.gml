@@ -20,3 +20,9 @@ if !alive {
 	launchReady = false;
 	alarm[2] = -1;
 }
+
+if global.paused{
+	if alarm[2] > 0 {
+		alarm[2] +=1;
+	}
+}

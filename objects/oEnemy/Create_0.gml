@@ -12,6 +12,8 @@ alertFading = false;
 
 t = 0;
 
+paused = false;
+
 aggroCheck= function(){
 	return aggroCondition();
 }
@@ -30,3 +32,11 @@ endSlowmo = function(){
 onPlayerReset = function(){
 	return true;	
 }
+
+onPause = function(){
+	paused = true;
+}	
+
+onUnpause = function(){
+	paused = false;
+}	
