@@ -108,6 +108,10 @@ if !slowmoActive{
 		slowmoDuration= 120;
 		scrEndSlowMo();
 	}
+	else
+	{
+		enableSlowMoShader(0.0, 36.0, 0.12);
+	}
 }
 
 updateGlobalPlayerPosition();
