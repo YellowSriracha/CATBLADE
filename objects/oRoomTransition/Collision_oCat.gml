@@ -1,4 +1,5 @@
-if goto != noone{
+//Unreachable for now
+if goto != noone and false{
 	if side % 2 != 0 {
 		global.mapController.roomSpawnX = other.x;	
 	} else {

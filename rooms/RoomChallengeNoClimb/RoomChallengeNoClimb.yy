@@ -19,7 +19,7 @@
   "isDnd":false,
   "layers":[
     {"$GMRTileLayer":"","%Name":"CollisionMap","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"CollisionMap","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
-          -3,47,1,24,-4,0,1,16,-12,47,1,24,-18,0,-3,47,1,24,-4,0,1,16,-12,47,1,24,-18,0,-3,47,1,24,-4,0,1,40,-10,
+          -3,47,1,24,-5,0,1,16,-11,47,1,24,-18,0,-3,47,1,24,-5,0,1,16,-11,47,1,24,-18,0,-3,47,1,24,-5,0,1,40,-9,
           28,3,8,47,24,-18,0,-3,47,1,24,-15,0,3,16,47,24,-18,0,-3,47,1,24,-15,0,3,16,47,24,-18,0,-3,47,1,24,-15,
           0,3,16,47,24,-18,0,-3,47,1,24,-15,0,3,16,47,24,-18,0,-3,47,1,2,-9,20,1,36,-5,0,3,16,47,24,-18,0,-3,47,
           1,4,-9,28,1,38,-5,0,3,16,47,24,-18,0,-3,47,1,24,-15,0,3,16,47,24,-18,0,-3,47,1,24,-15,0,3,16,47,24,-18,

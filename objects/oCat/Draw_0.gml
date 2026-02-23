@@ -9,3 +9,8 @@ if instance_exists(targetEnemy){
 		//draw_sprite(sTarget,0,targetEnemy.x,targetEnemy.y);
 	}
 }
+
+if slowmoActive {
+	draw_sprite(sManabar,26*(slowmoDuration/120),x,y-20);	
+	
+}

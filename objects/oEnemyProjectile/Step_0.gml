@@ -1,7 +1,12 @@
 if !collided{
-	x += velocity.x;
-	y += velocity.y;
-	position.set(x,y);
+	if !oCat.slowmoActive{
+		x += velocity.x;
+		y += velocity.y;
+	} else {
+		x += velocity.x/3;
+		y += velocity.y/3;
+	}
+		position.set(x,y);
 	image_angle = angle;
 	image_index = 0;
 	if place_meeting(x,y,oCat.collidables) {
@@ -14,3 +19,5 @@ if !collided{
 		instance_destroy();	
 	}
 }
+
+image_speed = oCat.slowmoActive ? 0.33:1;

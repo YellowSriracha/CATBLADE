@@ -71,9 +71,9 @@ function scrVectorAngle(_x, _y) {
 		
     var ret = radtodeg(arctan(_y/_x));
     if (_x < 0 and _y < 0) // quadrant Ⅲ
-        ret = 180 - ret;
+        ret = 180 + ret;
     else if (_x < 0) // quadrant Ⅱ
-        ret = 180 - ret; // it actually substracts
+        ret = 180 + ret; // it actually substracts
     else if (_y < 0) // quadrant Ⅳ
         ret = 270 - (90 + ret); // it actually substracts
     return ret;
