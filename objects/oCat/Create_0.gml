@@ -310,3 +310,8 @@ function unpause() {
 	paused = false;
 	stateChange(storedState);
 }
+
+function updateGlobalPlayerPosition(){
+	global.globalPlayerPositionX = x;
+	global.globalPlayerPositionY = y;
+}

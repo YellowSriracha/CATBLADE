@@ -13,3 +13,6 @@ if x >= room_width{
 	side = 3;	
 } 
 
+if (!instance_exists(oPostFX)) {
+    instance_create_layer(0, 0, "Instances", oPostFX);
+}

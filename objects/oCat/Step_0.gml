@@ -137,6 +137,10 @@ if !paused {
 			slowmoActive = false;	
 			slowmoDuration= 120;
 			scrEndSlowMo();
+		}	
+		else
+		{
+			enableSlowMoShader(0.0, 36.0, 0.12);
 		}
 	}
 }
@@ -144,3 +148,5 @@ if !paused {
 if paused and alarm[0] >= 0 {
 	alarm[0] +=1;
 }
+
+updateGlobalPlayerPosition();
