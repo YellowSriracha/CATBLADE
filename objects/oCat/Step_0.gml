@@ -7,7 +7,6 @@ inputD = global.input.downKey;
 
 inputA = global.input.attackKey;
 
-
 switch(state){
 	case PlayerState.GROUND:
 		if xsp == 0{
@@ -99,3 +98,5 @@ if global.unlockables.slash == 1 and !slashing{
 		}
 	}
 }
+
+updateGlobalPlayerPosition();

@@ -233,4 +233,9 @@ function die(){
 	scrPlaySound(sfxDeathMeow)
 	x = respawnPointX;
 	y = respawnPointY;
-}	
+}
+
+function updateGlobalPlayerPosition(){
+	global.globalPlayerPositionX = x;
+	global.globalPlayerPositionY = y;
+}
