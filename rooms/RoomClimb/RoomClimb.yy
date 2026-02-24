@@ -7,7 +7,6 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_45A785DF_2","path":"rooms/RoomClimb/RoomClimb.yy",},
-    {"name":"inst_353F1404_1","path":"rooms/RoomClimb/RoomClimb.yy",},
     {"name":"inst_5921B1B5","path":"rooms/RoomClimb/RoomClimb.yy",},
     {"name":"inst_434008A3","path":"rooms/RoomClimb/RoomClimb.yy",},
     {"name":"inst_67DDDDFC","path":"rooms/RoomClimb/RoomClimb.yy",},
@@ -31,7 +30,6 @@
           -10,12,1,13,-8,0,-2,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v2","%Name":"inst_353F1404_1","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_353F1404_1","objectId":{"name":"oRoomTransition","path":"objects/oRoomTransition/oRoomTransition.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.3125,"scaleY":4.015625,"x":640.0,"y":0.0,},
         {"$GMRInstance":"v2","%Name":"inst_45A785DF_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_45A785DF_2","objectId":{"name":"oCat","path":"objects/oCat/oCat.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":616.0,"y":246.0,},
         {"$GMRInstance":"v2","%Name":"inst_5921B1B5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5921B1B5","objectId":{"name":"oPickupClimb","path":"objects/oPickupClimb/oPickupClimb.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":358.0,"y":297.0,},
         {"$GMRInstance":"v2","%Name":"inst_434008A3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_434008A3","objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":215.0,"y":87.0,},

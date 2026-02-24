@@ -35,5 +35,5 @@
     "path":"sprites/sZoneRed/sZoneRed.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

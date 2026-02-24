@@ -5,7 +5,7 @@ global.unlockables = {
 	slash: 0,
 	doubleslash: 0,
 	slowmo: 0,
-	ceilingclimb: 1
+	ceilingclimb: 0
 }
 
 global.collectibles = {

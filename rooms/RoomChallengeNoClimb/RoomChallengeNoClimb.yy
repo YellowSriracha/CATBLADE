@@ -28,7 +28,7 @@
           0,-2,47,1,24,-6,0,1,16,-11,47,1,24,-18,0,-2,47,1,24,-6,0,1,16,-11,47,1,24,-18,0,-2,47,1,24,-6,0,1,16,
           -11,47,1,24,-18,0,-2,47,1,24,-6,0,1,16,-11,47,1,24,-18,0,-2,47,1,24,-4,0,3,34,20,1,-11,47,1,24,-18,0,
           -2,47,1,24,-4,0,1,16,-13,47,1,24,-18,0,-2,47,1,24,-4,0,1,16,-13,47,1,24,-18,0,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"TileSetPurple","path":"tilesets/TileSetPurple/TileSetPurple.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"tilesetPurple","path":"tilesets/tilesetPurple/tilesetPurple.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRAssetLayer":"","%Name":"Spikes","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_72D33C78","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_72D33C78","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sSpike1","path":"sprites/sSpike1/sSpike1.yy",},"x":104.0,"y":304.0,},
       ],"depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Spikes","properties":[],"resourceType":"GMRAssetLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},

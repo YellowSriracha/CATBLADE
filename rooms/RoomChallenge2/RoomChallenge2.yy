@@ -19,7 +19,7 @@
           -137,0,1,42,-39,0,1,44,-74,0,1,42,-39,0,1,44,-116,0,1,42,-39,0,1,44,-116,0,1,42,-39,0,1,32,-27,0,3,43,
           33,22,-3,20,-4,0,3,34,20,26,-29,0,4,40,8,47,47,-4,20,3,5,28,38,-30,0,1,16,-5,47,2,4,38,-32,0,2,40,8,
           -4,47,1,24,-34,0,2,40,8,-3,47,1,24,-35,0,5,16,47,47,4,38,-35,0,4,16,47,47,24,-36,0,1,16,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"TileSetPurple","path":"tilesets/TileSetPurple/TileSetPurple.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"tilesetPurple","path":"tilesets/tilesetPurple/tilesetPurple.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_3053F02A","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_3053F02A","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sSpike1","path":"sprites/sSpike1/sSpike1.yy",},"x":50.0,"y":342.0,},
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_308B2BA9","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_308B2BA9","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sSpike2","path":"sprites/sSpike2/sSpike2.yy",},"x":163.0,"y":342.0,},

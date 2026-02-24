@@ -1,6 +1,6 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"TileSetPurple",
+  "%Name":"tilesetPurple",
   "autoTileSets":[
     {"$GMAutoTileSet":"","%Name":"Grass","closed_edge":false,"name":"Grass","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
         47,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,
@@ -12,19 +12,19 @@
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"TileSetPurple",
+  "name":"tilesetPurple",
   "out_columns":7,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
-    "name":"Tile Sets",
-    "path":"folders/Tile Sets.yy",
+    "name":"Purple",
+    "path":"folders/Tile Sets/Purple.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"tilesetPurple",
-    "path":"sprites/tilesetPurple/tilesetPurple.yy",
+    "name":"sTilesetPurple",
+    "path":"sprites/sTilesetPurple/sTilesetPurple.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

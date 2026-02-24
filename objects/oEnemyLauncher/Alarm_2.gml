@@ -18,7 +18,6 @@ with _this {
 	
 	angle = point_direction(x,y,(oCat.x+_xOffset),(oCat.y + _yOffset));
 	
-	
 	x += lengthdir_x(5,angle);
 	y += lengthdir_y(5,angle);
 	setVelocity();

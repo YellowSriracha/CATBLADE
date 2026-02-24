@@ -21,7 +21,7 @@ if keyboard_check_pressed(ord("U")){
 }
 
 if keyboard_check_pressed(ord("N")){
-	lookup = true;
+	oMapController.lookup = true;
 	room_goto_next();
 	
 }

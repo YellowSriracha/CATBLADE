@@ -17,5 +17,4 @@ if instance_exists(targetEnemy){
 
 if slowmoActive {
 	draw_sprite(sManabar,26*(slowmoDuration/120),x,y-20);	
-	
 }

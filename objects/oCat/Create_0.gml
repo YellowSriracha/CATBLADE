@@ -114,7 +114,9 @@ function move(){
 			}
 			if ysp < 0 {
 				snapToCeiling();
-				if global.unlockables.ceilingclimb onCeiling = true;	
+				if global.unlockables.ceilingclimb {
+					onCeiling = true;	
+				}
 			}
 			ysp = 0;
 		}
@@ -139,8 +141,8 @@ function move(){
 		//If not facing wall, let go
 		if !place_meeting(x+dir,y+ysp,collidables){
 			onWall = false;	
-			if place_meeting(x,y-1,collidables){
-			onCeiling = true;	
+			if place_meeting(x,y-1,collidables) and global.unlockables.ceilingclimb{
+				onCeiling = true;	
 			}
 		}
 		y+=ysp;

@@ -27,7 +27,7 @@
           0,1,32,-8,0,-4,47,1,24,-13,0,1,32,-5,0,2,16,24,-5,0,1,44,-8,0,-4,47,1,24,-13,0,1,32,-5,0,2,16,24,-14,
           0,-3,47,2,4,38,-13,0,1,32,-5,0,2,16,24,-14,0,-2,47,2,4,38,-14,0,1,32,-5,0,2,16,24,-14,0,-2,47,1,24,-15,
           0,1,32,-5,0,2,16,24,-14,0,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"TileSetPurple","path":"tilesets/TileSetPurple/TileSetPurple.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"tilesetPurple","path":"tilesets/tilesetPurple/tilesetPurple.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRAssetLayer":"","%Name":"Spikes","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_6D427D91","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_6D427D91","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sSpike1","path":"sprites/sSpike1/sSpike1.yy",},"x":40.0,"y":342.0,},
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_73D6A632","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_73D6A632","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sSpike2","path":"sprites/sSpike2/sSpike2.yy",},"x":157.0,"y":342.0,},
