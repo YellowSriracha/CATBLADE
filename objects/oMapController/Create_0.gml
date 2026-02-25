@@ -14,7 +14,8 @@ global.mapIndex = [0, 1];
 
 mapData = [	[noone, RoomIntro, noone, noone, noone, noone],
 			[noone, RoomChallengeNoClimb, RoomEnd, Room4, noone, noone],
-			[RoomClimb, Room1,	Room2, Room3, noone, noone],
+			[RoomClimb, Room1,	Room2, RoomCatblade, noone, noone],
+			[noone, noone, RoomSplitRedLeft, RoomSplitRed, noone, noone],
 			[noone,RoomPurpleSlowChallenge1,RoomPurpleLeft1,RoomSplit,noone],
 			[RoomPurpleFastClimb,RoomPurpleSlowChallenge2,noone,noone,noone]
 		  ]
