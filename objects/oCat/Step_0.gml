@@ -140,11 +140,12 @@ if !paused {
 		if slowmoDuration <= 0{
 			slowmoActive = false;	
 			slowmoDuration= 120;
+			Shader_ChromaticAbberation_Disable();
 			scrEndSlowMo();
 		}	
 		else
 		{
-			enableSlowMoShader(0.0, 36.0, 0.12);
+			Shader_ChromaticAbberation_Enable();
 		}
 	}
 }
