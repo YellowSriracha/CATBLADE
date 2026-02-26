@@ -3,8 +3,7 @@ global.unlockSystem = instance_create_layer(0,0,layer,oUnlocks);
 global.mapController = instance_create_layer(0,0,layer,oMapController);
 global.soundSystem = instance_create_layer(0,0,layer,oSoundSystem);
 global.pauseSystem = instance_create_layer(0,0,layer,oPause)
-global.postFX = instance_create_layer(0,0,layer,oPostFX);
-
+global.postProcess = instance_create_layer(0,0,layer,oPostProcess);
 global.debugOverlay = instance_create_layer(0,0,layer,oCatDebug);
 global.debugControls = instance_create_layer(0,0,layer,oDebugControls);
 
