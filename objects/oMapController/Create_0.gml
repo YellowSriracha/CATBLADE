@@ -12,10 +12,11 @@ lookup = true;
 
 global.mapIndex = [0, 1];
 
-mapData = [	[noone, RoomIntro, noone, noone, noone, noone],
-			[noone, RoomChallengeNoClimb, RoomEnd, Room4, noone, noone],
-			[RoomClimb, Room1,	Room2, RoomCatblade, noone, noone],
-			[noone, noone, RoomSplitRedLeft, RoomSplitRed, noone, noone],
-			[noone,RoomPurpleSlowChallenge1,RoomPurpleLeft1,RoomSplit,noone],
-			[RoomPurpleFastClimb,RoomPurpleSlowChallenge2,noone,noone,noone]
+mapData = [	[noone, RoomIntro, noone, noone, noone, noone, noone],
+			[noone, RoomChallengeNoClimb, RoomEnd, Room4, noone, noone, noone],
+			[RoomClimb, Room1,	Room2, RoomCatblade, noone, noone, noone],
+			[noone, noone, RoomSplitRedLeft, RoomSplitRed, RoomSplitRedRight, RoomSlowMoGate, noone],
+			[noone, noone, noone, noone, RoomTransitionRedPurple, noone, noone],
+			[noone,noone,RoomPurpleSlowChallenge1,RoomPurpleLeft1,RoomSplit,RoomPurpleRight1, noone],
+			[noone,RoomPurpleFastClimb,RoomPurpleSlowChallenge2,RoomPurpleLeft2,RoomSlowMoGateBottom,RoomPurpleChallenge3, RoomzUpgradePurpleSlowmo]
 		  ]

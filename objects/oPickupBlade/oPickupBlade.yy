@@ -4,13 +4,14 @@
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"oCat","path":"objects/oCat/oCat.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"oPickupBlade",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Upgrades",
+    "path":"folders/Objects/Upgrades.yy",
   },
   "parentObjectId":{
     "name":"oPickup",
@@ -34,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPickupAttack",
-    "path":"sprites/sPickupAttack/sPickupAttack.yy",
+    "name":"sPickupCatBlade",
+    "path":"sprites/sPickupCatBlade/sPickupCatBlade.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sEnemyLauncher",
-    "path":"sprites/sEnemyLauncher/sEnemyLauncher.yy",
+    "name":"sEnemySentry",
+    "path":"sprites/sEnemySentry/sEnemySentry.yy",
   },
   "spriteMaskId":null,
   "visible":true,

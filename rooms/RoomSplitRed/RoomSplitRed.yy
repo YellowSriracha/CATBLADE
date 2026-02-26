@@ -35,7 +35,14 @@
           -4,0,2,16,24,-14,0,-6,20,2,1,24,-10,0,2,16,24,-4,0,2,16,2,-14,20,-7,47,1,2,-10,20,2,1,2,-4,20,1,1,-95,
           47,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tilesetRed","path":"tilesets/tilesetRed/tilesetRed.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"sZoneDark","path":"sprites/sZoneDark/sZoneDark.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
+    {"$GMRTileLayer":"","%Name":"Tiles_1","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
+          -411,-2147483648,2,268435479,268435478,-38,-2147483648,2,268435495,268435494,-38,-2147483648,2,268435511,
+          268435510,-16,-2147483648,3,24,25,26,-19,-2147483648,2,268435527,268435526,-16,-2147483648,3,40,41,42,
+          -19,-2147483648,2,268435543,268435542,-16,-2147483648,3,56,57,58,-37,-2147483648,3,72,73,74,-37,-2147483648,
+          3,88,89,90,-37,-2147483648,3,104,105,106,-37,-2147483648,3,120,121,122,-37,-2147483648,3,136,137,138,
+          -128,-2147483648,
+        ],"TileDataFormat":1,},"tilesetId":{"name":"tilsetRedExtra","path":"tilesets/tilsetRedExtra/tilsetRedExtra.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"backgroundCaves44","path":"sprites/backgroundCaves44/backgroundCaves44.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
   ],
   "name":"RoomSplitRed",
   "parent":{

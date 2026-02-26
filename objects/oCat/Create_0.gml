@@ -27,7 +27,8 @@ slashing = false;
 //Pause flag
 paused = false;
 slowmoActive = false;
-slowmoDuration = 120;
+SLOWMOMAX = 120
+slowmoDuration = SLOWMOMAX;
 
 storedState = PlayerState.GROUND;
 //State
@@ -69,8 +70,9 @@ frameData = {
 	}
 }
 
-respawnPointX = x;
-respawnPointY = y;
+var _respawnPoint = determineRespawnPoint();
+respawnPointX = _respawnPoint.x;
+respawnPointY = _respawnPoint.y;
 //Spawn in in a room transition is occurring
 if global.roomTransition {
 	SetSpawnPoint();
@@ -292,8 +294,10 @@ function SetSpawnPoint(){
 	}
 	ysp = global.mapController.roomSpawnYsp;
 	global.roomTransition = false;
-
-Wall = global.mapController.roomTransitionOnWall;
+	onWall = global.mapController.roomTransitionOnWall;
+	if onWall {
+		dir = global.mapController.roomTransitionDir;
+	}
 }
 
 function die(){
@@ -309,8 +313,22 @@ function pause() {
 }
 
 function unpause() {
+	sprite_index = sCatAlt;
 	paused = false;
 	stateChange(storedState);
+}
+
+function determineRespawnPoint(){
+	if !instance_exists(oRespawnPoint){
+		return {x,y};
+	}
+	for (var i = 0; i < instance_number(oRespawnPoint); i++){
+		var _this = instance_find(oRespawnPoint,i);
+		if _this.isActive(){
+			return _this.getPosition();	
+		}
+	}
+	return {x,y};
 }
 
 function updateGlobalPlayerPosition(){

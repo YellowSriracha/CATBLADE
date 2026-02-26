@@ -41,7 +41,7 @@ if global.roomTransition {
 	global.mapController.roomSpawnYsp = oCat.ysp;
 	global.roomTransition = true;
 	global.mapController.roomTransitionOnWall = oCat.onWall;
-	
+	global.mapController.roomTransitionDir = oCat.dir;
 	
 	var _room = mapData[global.mapIndex[0]][global.mapIndex[1]];
 	if _room == noone {

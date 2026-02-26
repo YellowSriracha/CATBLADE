@@ -1,4 +1,16 @@
 
+if global.unlockables.slash and sprite_index != sCatHoldingSword{
+	var _rotate = (onWall) ? dir*90 : 0;
+	var _xScale = dir;
+	if onWall and ysp > 0 {
+		_xScale = -dir;
+	}
+	var _xOffset = 0;
+	if onWall _xOffset = dir*2;
+	if !onWall and xsp !=0 _xOffset = dir*-1;
+	draw_sprite_ext(sCatBlade,0,x+_xOffset,y,_xScale,1,_rotate,c_white,10);
+}
+
 if onWall or onCeiling{
 	var _rotate = onCeiling ? dir*90 : 0;
 	var _xOffset = onCeiling ? 0 : dir*3;
@@ -15,6 +27,6 @@ if instance_exists(targetEnemy){
 	}
 }
 
-if slowmoActive {
-	draw_sprite(sManabar,26*(slowmoDuration/120),x,y-20);	
+if slowmoDuration < SLOWMOMAX {
+	draw_sprite(sManabar,26*(slowmoDuration/SLOWMOMAX),x,y-20);	
 }

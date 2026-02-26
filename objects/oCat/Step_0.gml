@@ -8,7 +8,7 @@ inputD = global.input.downKey;
 inputA = global.input.attackKey;
 inputM = global.input.castKey;
 
-if global.unlockables.fastclimb climbSpeed = 2;
+if global.unlockables.fastclimb climbSpeed = 2.2;
 
 
 switch(state){
@@ -129,7 +129,9 @@ if !paused {
 	}
 
 	if !slowmoActive{
-		if inputM and global.unlockables.slowmo{
+		if slowmoDuration < SLOWMOMAX {
+			slowmoDuration += 1;	
+		}else if inputM and global.unlockables.slowmo{
 			slowmoActive = true;	
 			scrPlaySound(sfxSlowdown);
 			alarm[1] = 10;
@@ -139,7 +141,7 @@ if !paused {
 		slowmoDuration -=1;
 		if slowmoDuration <= 0{
 			slowmoActive = false;	
-			slowmoDuration= 120;
+			//slowmoDuration= SLOWMOMAX;
 			scrEndSlowMo();
 		}	
 		else
@@ -147,6 +149,7 @@ if !paused {
 			enableSlowMoShader(0.0, 36.0, 0.12);
 		}
 	}
+	
 }
 
 if paused and alarm[0] >= 0 {

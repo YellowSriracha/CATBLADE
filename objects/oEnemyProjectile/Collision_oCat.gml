@@ -1,4 +1,6 @@
 if !collided{
 	collided = true;
-	oCat.die();
+	if !oCat.slashing {
+		oCat.die();
+	}
 }
