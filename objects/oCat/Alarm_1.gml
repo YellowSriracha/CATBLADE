@@ -1,5 +1,5 @@
 ///@description Tick sfx
-if slowmoActive{
+if global.slowmoActive{
 	scrPlaySound(sfxTick);
 	alarm[1] = 30;
 }

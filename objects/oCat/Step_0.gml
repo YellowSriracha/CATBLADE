@@ -1,5 +1,5 @@
 //check all inputs
-
+alive = true;
 inputR = global.input.rightKey;
 inputL = global.input.leftKey;
 inputU = global.input.upKey;
@@ -9,6 +9,10 @@ inputA = global.input.attackKey;
 inputM = global.input.castKey;
 
 if global.unlockables.fastclimb climbSpeed = 2.2;
+if global.roomTransition {
+	SetSpawnPoint();
+}
+
 
 
 switch(state){
@@ -128,19 +132,17 @@ if !paused {
 		}
 	}
 
-	if !slowmoActive{
+	if !global.slowmoActive{
 		if slowmoDuration < SLOWMOMAX {
 			slowmoDuration += 1;	
 		}else if inputM and global.unlockables.slowmo{
-			slowmoActive = true;	
-			scrPlaySound(sfxSlowdown);
-			alarm[1] = 10;
+			
 			scrStartSlowMo();
 		}
 	} else {
 		slowmoDuration -=1;
 		if slowmoDuration <= 0{
-			slowmoActive = false;	
+			global.slowmoActive = false;	
 			//slowmoDuration= SLOWMOMAX;
 			scrEndSlowMo();
 		}	
@@ -155,6 +157,7 @@ if !paused {
 if paused and alarm[0] >= 0 {
 	alarm[0] += 1;
 	alarm[1] += 1;
+	
 }
 
 updateGlobalPlayerPosition();

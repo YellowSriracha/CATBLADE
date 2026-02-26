@@ -1,7 +1,7 @@
 
 if !global.paused{
 	if !collided{
-		if !oCat.slowmoActive{
+		if !global.slowmoActive{
 			x += velocity.x;
 			y += velocity.y;
 		} else {
@@ -25,7 +25,7 @@ if !global.paused{
 
 
 if !global.paused {
-	image_speed = oCat.slowmoActive ? 0.33:1;
+	image_speed = global.slowmoActive ? 0.33:1;
 } else {
 	image_speed = 0;
 }

@@ -11,10 +11,10 @@ with _this {
 	setVelocity();
 	
 	if !audio_is_playing(sfxLaser){
-		var _pitch = oCat.slowmoActive ? 0.5:1;
+		var _pitch = global.slowmoActive ? 0.5:1;
 		scrPlaySound(sfxLaser,,,_pitch);
 	}
 }
 
 image_index = 0;
-alarm[2] = oCat.slowmoActive ? 135 : 45
+alarm[2] = global.slowmoActive ? 135 : 45

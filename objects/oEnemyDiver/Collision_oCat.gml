@@ -4,7 +4,7 @@ if alive {
 	}
 	alive = false;
 	image_alpha = 0;
-	
+	scrSfxExplosion();
 	with oCat{
 		if !slashing die();
 	}

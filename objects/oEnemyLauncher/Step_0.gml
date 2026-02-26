@@ -12,7 +12,7 @@ if playerXDistance < -40 {
 if alarm[2] != -1 image_index+=2;
 
 if aggro and !launchReady and alarm[2] == -1{
-	alarm[2] = oCat.slowmoActive ? 135 : 45;
+	alarm[2] = global.slowmoActive ? 135 : 45;
 }
 
 if !alive {

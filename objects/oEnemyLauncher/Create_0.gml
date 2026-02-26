@@ -13,3 +13,10 @@ endSlowmo = function(){
 		alarm[2] = round(alarm[2]/3);	
 	}
 }
+
+aggroCheck = function(){
+	if aggroCondition() {
+		scrPlaySound(sfxAlert);
+		return true;
+	}
+}

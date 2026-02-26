@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sClimbPickup",
-    "path":"sprites/sClimbPickup/sClimbPickup.yy",
+    "name":"sUpgradeIcon_FastClimb",
+    "path":"sprites/sUpgradeIcon_FastClimb/sUpgradeIcon_FastClimb.yy",
   },
   "spriteMaskId":null,
   "visible":true,

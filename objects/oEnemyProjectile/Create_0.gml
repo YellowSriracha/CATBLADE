@@ -5,6 +5,5 @@ collided = false;
 
 function setVelocity(){
 	velocity = new Vector(lengthdir_x(spd,angle),lengthdir_y(spd,angle));
-	
 }
 setVelocity();

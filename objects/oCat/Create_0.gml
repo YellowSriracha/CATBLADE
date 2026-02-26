@@ -14,6 +14,7 @@ inputXdir = 0;
 inputYdir = 0;
 
 //Direction and buffers
+alive = true;
 dir = 1;
 onWall = false;
 onCeiling = false;
@@ -26,7 +27,8 @@ slashing = false;
 
 //Pause flag
 paused = false;
-slowmoActive = false;
+
+global.slowmoActive = false;
 SLOWMOMAX = 120
 slowmoDuration = SLOWMOMAX;
 
@@ -70,9 +72,9 @@ frameData = {
 	}
 }
 
-var _respawnPoint = determineRespawnPoint();
-respawnPointX = _respawnPoint.x;
-respawnPointY = _respawnPoint.y;
+
+respawnPointX = x;
+respawnPointY = y;
 //Spawn in in a room transition is occurring
 if global.roomTransition {
 	SetSpawnPoint();
@@ -100,6 +102,7 @@ function move(){
 				ysp = 0
 				onWall = true;
 				onCeiling = false;
+				scrSfxLanding();
 			}
 		}
 		x += xsp;
@@ -110,8 +113,12 @@ function move(){
 				ysp = 0;
 			}
 		}
+		
+		var _onGroundBefore = onGround();
+		
 		if place_meeting(x,y+ysp,collidables){
 			if ysp > 0 and !onGround(){
+				_landing = true;
 				snapToGround();
 			}
 			if ysp < 0 {
@@ -123,7 +130,11 @@ function move(){
 			ysp = 0;
 		}
 		
+		
 		y+=ysp;
+		if _onGroundBefore == false and onGround() == true{
+			scrSfxLanding();
+		}
 	} else if onWall {
 		xsp = 0;	
 		
@@ -131,7 +142,7 @@ function move(){
 		if place_meeting(x,y+ysp,collidables) {
 			
 			if ysp > 0 {
-				onWall = false;
+				//onWall = false;
 				if ysp >0 {
 					snapToGround();
 				} 
@@ -300,11 +311,19 @@ function SetSpawnPoint(){
 	}
 }
 
-function die(){
-	scrPlaySound(sfxDeathMeow)
-	x = respawnPointX;
-	y = respawnPointY;
-	scrOnDeath();
+function die(_direction = undefined){
+	if alive{
+		var _body = instance_create_layer(x,y,layer,oCatBody);
+		if !is_undefined(_direction) {
+			_body.setDirection(_direction);
+		}
+		alive = false;
+		scrPlaySound(sfxDeathMeow)
+		
+		x = respawnPointX;
+		y = respawnPointY;
+		scrOnDeath();
+	}
 }	
 
 function pause() {
@@ -335,3 +354,5 @@ function updateGlobalPlayerPosition(){
 	global.globalPlayerPositionX = x;
 	global.globalPlayerPositionY = y;
 }
+
+

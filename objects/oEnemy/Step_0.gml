@@ -14,7 +14,6 @@ if !paused{
 		if aggro {
 			alertAlpha = 1;
 			alarm[1] = 30;
-			scrPlaySound(sfxAlert)	
 		}
 	}
 	

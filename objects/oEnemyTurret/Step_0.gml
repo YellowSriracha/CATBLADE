@@ -8,5 +8,5 @@ if global.paused{
 	}
 	image_speed = 0;
 } else {
-	image_speed = oCat.slowmoActive ? 0.33 : 1;	
+	image_speed = global.slowmoActive ? 0.33 : 1;	
 }

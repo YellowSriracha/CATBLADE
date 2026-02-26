@@ -15,6 +15,7 @@ if alive and !paused{
 	
 	if place_meeting(x,y,oCat.collidables) {
 		instance_create_layer(x,y,layer,oExplosion);
+		scrSfxExplosion();
 		alive = false;
 		image_alpha = 0;
 	}
