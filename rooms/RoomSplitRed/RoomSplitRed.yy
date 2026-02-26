@@ -28,12 +28,12 @@
         {"$GMRInstance":"v2","%Name":"inst_64F73AA3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_64F73AA3","objectId":{"name":"oSpikeBlocks","path":"objects/oSpikeBlocks/oSpikeBlocks.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":305.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"CollisionMap","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"CollisionMap","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
-          -10,47,1,24,-9,0,1,16,-29,47,1,24,-9,0,1,16,-29,47,1,24,-9,0,1,16,-28,47,2,4,38,-9,0,1,16,-28,47,1,24,
-          -10,0,2,40,8,-27,47,1,24,-11,0,1,16,-27,47,1,24,-11,0,1,16,-25,47,3,4,28,38,-11,0,2,40,8,-23,47,2,4,
-          38,-14,0,1,40,-4,28,1,8,-12,47,-6,28,1,38,-20,0,1,40,-12,28,-171,0,4,34,20,20,36,-36,0,4,16,47,47,24,
-          -36,0,4,40,28,28,38,-3,0,2,34,36,-26,0,2,34,36,-10,0,2,16,24,-4,0,2,34,36,-20,0,2,16,24,-10,0,2,16,24,
-          -4,0,2,16,24,-14,0,-6,20,2,1,24,-10,0,2,16,24,-4,0,2,16,2,-14,20,-7,47,1,2,-10,20,2,1,2,-4,20,1,1,-95,
-          47,
+          -13,47,1,24,-11,0,1,16,-27,47,1,24,-11,0,1,16,-27,47,1,24,-11,0,1,16,-26,47,2,4,38,-11,0,1,16,-26,47,
+          1,24,-12,0,1,16,-25,47,2,4,38,-11,0,2,34,1,-24,47,2,4,38,-12,0,1,16,-22,47,4,4,28,28,38,-11,0,3,34,20,
+          1,-21,47,2,4,38,-14,0,1,18,-4,28,1,8,-12,47,-6,28,1,38,-14,0,2,43,39,-4,0,1,40,-12,28,-171,0,4,34,20,
+          20,36,-36,0,4,16,47,47,24,-36,0,4,40,28,28,38,-3,0,2,34,36,-26,0,2,34,36,-10,0,2,16,24,-4,0,2,34,36,
+          -20,0,2,16,24,-10,0,2,16,24,-4,0,2,16,24,-14,0,-6,20,2,1,24,-10,0,2,16,24,-4,0,2,16,2,-14,20,-7,47,1,
+          2,-10,20,2,1,2,-4,20,1,1,-95,47,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tilesetRed","path":"tilesets/tilesetRed/tilesetRed.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles_1","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
           -411,-2147483648,2,268435479,268435478,-38,-2147483648,2,268435495,268435494,-38,-2147483648,2,268435511,

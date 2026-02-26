@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrWindowResize",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrWindowResize",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

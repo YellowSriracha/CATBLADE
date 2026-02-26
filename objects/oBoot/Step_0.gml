@@ -1,3 +1,8 @@
 //room_goto(Room1)
-global.mapController.lookup = true;
-room_goto_next();
+
+//global.mapController.lookup = true;
+if global.htmlMode {
+	room_goto(rmClickToStart);
+} else {
+	room_goto_next();
+}

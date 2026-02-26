@@ -1,3 +1,5 @@
+///@description Draw Pause Menu
+
 draw_set_color(boxColor);
 
 if global.paused{
@@ -11,4 +13,5 @@ if global.paused{
 	draw_text(_lside+(textBoxWidth/2), _tside + ypadding,"Pause Menu")
 	draw_set_font(-1);
 	draw_set_halign(fa_left);
+	draw_set_color(c_white)
 }

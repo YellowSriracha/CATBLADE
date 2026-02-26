@@ -22,7 +22,11 @@ if keyboard_check_pressed(ord("U")){
 
 if keyboard_check_pressed(ord("N")){
 	oMapController.lookup = true;
-	room_goto_next();
+	if room == RoomChallenge2 {
+		room_goto(RoomIntro)	
+	} else {
+		room_goto_next();
+	}
 	
 }
 

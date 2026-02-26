@@ -1,5 +1,5 @@
 global.paused = false;
-
+global.pauseDisabled  = false;
 boxColor = c_black;
 textColor = #d14d19;
 textBoxWidth = 1000;

@@ -7,15 +7,19 @@ function scrGetSlowmoPitch(){
 }
 
 function scrSfxFootstep(){
-	var _pitch = 1;
+	var _pitch = random_range(0.8,1.2);
 	if global.slowmoActive{
 		_pitch = 0.5;
 	}
-	scrPlaySound(sfxFootstep,,,scrGetSlowmoPitch());
+	scrPlaySound(sfxFootstep,,,_pitch);
 }
 
 function scrSfxLanding(){
-	scrPlaySound(sfxLanding2,,,scrGetSlowmoPitch());
+	var _pitch = random_range(0.8,1.2);
+	if global.slowmoActive{
+		_pitch = 0.5;
+	}
+	scrPlaySound(sfxLanding2,,,_pitch);
 }
 
 function scrSfxExplosion(){
@@ -25,6 +29,6 @@ function scrSfxExplosion(){
 
 function scrSfxEnergyPulse(){
 	
-	scrPlaySound(sfxEnergy,0.8,,1);
+	scrPlaySound(sfxEnergy,1.3,,1);
 }
 

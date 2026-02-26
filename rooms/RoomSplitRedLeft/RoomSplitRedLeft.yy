@@ -8,12 +8,14 @@
   "instanceCreationOrder":[
     {"name":"inst_45A785DF_4_3","path":"rooms/RoomSplitRedLeft/RoomSplitRedLeft.yy",},
     {"name":"inst_7F1A8811","path":"rooms/RoomSplitRedLeft/RoomSplitRedLeft.yy",},
+    {"name":"inst_6EA01B68","path":"rooms/RoomSplitRedLeft/RoomSplitRedLeft.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_45A785DF_4_3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_45A785DF_4_3","objectId":{"name":"oCat","path":"objects/oCat/oCat.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":537.0,"y":296.0,},
         {"$GMRInstance":"v2","%Name":"inst_7F1A8811","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7F1A8811","objectId":{"name":"oEnemyLauncher","path":"objects/oEnemyLauncher/oEnemyLauncher.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":294.0,"y":172.0,},
+        {"$GMRInstance":"v2","%Name":"inst_6EA01B68","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6EA01B68","objectId":{"name":"oUnderConstruction","path":"objects/oUnderConstruction/oUnderConstruction.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.59375,"scaleY":1.515625,"x":-3.0,"y":48.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"CollisionMap","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"CollisionMap","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
           -52,47,1,4,-12,28,1,8,-14,47,-12,28,1,38,-12,0,4,40,28,28,8,-11,47,-28,0,3,40,28,8,-9,47,-30,0,2,40,
