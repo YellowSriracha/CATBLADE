@@ -20,3 +20,14 @@ aggroCheck = function(){
 		return true;
 	}
 }
+
+die = function(){
+	dieDefault();
+	for(var i = 0; i < 4;i++){
+		with instance_create_layer(x,y,layer,oEnemyPiece){
+			image_index = i;
+			xsp = ((i % 2)*-1) * -1;
+			ysp = i < 2 ? -1 : 0;
+		}
+	}
+}

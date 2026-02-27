@@ -1,5 +1,6 @@
 if keyboard_check_pressed(ord("R")){
-	game_restart();	
+	room_goto(RoomIntro);
+	global.unlockSystem.resetUnlocks();
 }
 
 if keyboard_check_pressed(ord("U")){

@@ -1,6 +1,6 @@
 #macro catwalkspeed 3
 #macro defaultgrav 0.1
-#macro slashspeed 10
+#macro slashspeed 15
 #macro tilewidth 16
 climbSpeed = 1;
 //Player Inputs
@@ -49,6 +49,9 @@ grav = defaultgrav;
 spd = 0;
 xsp = 0;
 ysp = 0;
+
+footstepTimer = 5;
+
 
 //Animation Frame Indexes
 frameData = {
@@ -178,6 +181,18 @@ function stateChange(_state){
 			image_xscale = inputXdir == 0 ? dir : inputXdir;
 		break;
 		case PlayerState.WALL:
+			slashesReady = 1;
+			if global.unlockables.doubleslash{
+				slashesReady = 2;	
+			}
+			dir = inputXdir == 0 ? dir : inputXdir;
+			image_index = frameData.wall.hold;
+		break;
+		case PlayerState.CEILING:
+			slashesReady = 1;
+			if global.unlockables.doubleslash{
+				slashesReady = 2;	
+			}
 			dir = inputXdir == 0 ? dir : inputXdir;
 			image_index = frameData.wall.hold;
 		break;
@@ -333,8 +348,9 @@ function pause() {
 
 function unpause() {
 	sprite_index = sCatAlt;
+	image_speed = 1;
 	paused = false;
-	stateChange(storedState);
+	state = storedState;
 }
 
 function determineRespawnPoint(){

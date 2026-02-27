@@ -11,7 +11,10 @@ if global.unlockables.slash and sprite_index != sCatHoldingSword{
 	draw_sprite_ext(sCatBlade,0,x+_xOffset,y,_xScale,1,_rotate,c_white,10);
 }
 
-if onWall or onCeiling{
+if slashing {
+
+	draw_sprite_ext(sCatAttack,0,x,y,1,1,point_direction(x,y,x+xsp,y+ysp),c_white,10);		
+} else if onWall or onCeiling{
 	var _rotate = onCeiling ? dir*90 : 0;
 	var _xOffset = onCeiling ? 0 : dir*3;
 	var _yOffset = onCeiling ? -3: 0;

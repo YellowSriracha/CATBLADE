@@ -8,7 +8,7 @@ if !global.paused{
 			x += velocity.x/3;
 			y += velocity.y/3;
 		}
-			position.set(x,y);
+		position.set(x,y);
 		image_angle = angle;
 		image_index = 0;
 		if place_meeting(x,y,oCat.collidables) {
