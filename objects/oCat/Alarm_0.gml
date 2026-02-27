@@ -1,8 +1,8 @@
 ///@description Ends slash animation
-
+grav = defaultgrav;
 slashing = false;
 if onWall{
-	state = PlayerState.WALL;
+	stateChange(PlayerState.WALL);
 } else {
-	state = PlayerState.AIR;
+	stateChange(PlayerState.CEILING);
 }

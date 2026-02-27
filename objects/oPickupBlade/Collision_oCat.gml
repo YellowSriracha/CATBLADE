@@ -1,5 +1,5 @@
 event_inherited();
-scrStartSlowMo()
+scrEndSlowMo();
 global.unlockables.slash = true;
 oCat.sprite_index = sCatHoldingSword;
 instance_destroy();

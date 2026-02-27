@@ -2,6 +2,7 @@
 #macro defaultgrav 0.1
 #macro slashspeed 15
 #macro tilewidth 16
+#macro attackrange 100
 climbSpeed = 1;
 //Player Inputs
 inputR = 0;
@@ -334,7 +335,12 @@ function die(_direction = undefined){
 		}
 		alive = false;
 		scrPlaySound(sfxDeathMeow)
-		
+		grav = defaultgrav;
+		slashing = false;
+		alarm[0] = -1;
+		stateChange(PlayerState.GROUND);
+		xsp = 0;
+		ysp = 0;
 		x = respawnPointX;
 		y = respawnPointY;
 		scrOnDeath();

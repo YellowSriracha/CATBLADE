@@ -23,8 +23,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"sTilesetPurple",
-    "path":"sprites/sTilesetPurple/sTilesetPurple.yy",
+    "name":"PurpleTilesnEW",
+    "path":"sprites/PurpleTilesnEW/PurpleTilesnEW.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

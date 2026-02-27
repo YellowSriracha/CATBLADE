@@ -11,8 +11,8 @@ function scrPhysicsMove(){
 
 	x+=xsp;
 
-	for (var i = 0; i < ysp; i++){
-		if place_meeting(x,y+ysp,oCat.collidables){
+	for (var i = 0; i < abs(ysp); i++){
+		if place_meeting(x,y+sign(ysp)*i,oCat.collidables){
 			ysp = -ysp *0.4;
 			i = ysp +1;
 		}

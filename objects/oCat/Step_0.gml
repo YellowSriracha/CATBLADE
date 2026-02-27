@@ -106,14 +106,19 @@ switch(state){
 	case PlayerState.SLASH:
 	
 		image_index = frameData.air.hold;
+		
+		grav = 0;
 		move();
 		
-		if onWall {
+		if onWall or onGround() {
 			alarm[0] = 1;
 		} else {
 			dir = sign(xsp);
-			xsp = lerp(xsp,0,0.06);	
-			ysp = lerp(ysp,0,0.06);	
+			var _angle = point_direction(0,0,xsp,ysp);
+			var _magnitude = sqrt(sqr(xsp)+sqr(ysp));
+			_magnitude = lerp(_magnitude,0,0.08);
+			xsp = lengthdir_x(_magnitude,_angle)
+			ysp = lengthdir_y(_magnitude,_angle)
 		}
 		
 		instance_create_layer(x,y,layer,oSlashParticle,{
@@ -125,7 +130,10 @@ switch(state){
 
 
 if !paused {
-	ysp = clamp(ysp,-8,8);
+	if !slashing {
+		ysp = clamp(ysp,-8,8);
+	}
+	
 	if  inputXdir != 0{
 		dir = inputXdir;
 		if !onWall image_xscale = inputXdir;
@@ -135,11 +143,14 @@ if !paused {
 			scrSfxFootstep()	
 		}
 
-	if global.unlockables.slash == 1 and !slashing and slashesReady > 0{
-		targetEnemy = collision_circle(x,y,70,oEnemy,0,1);
-		if inputA and instance_exists(targetEnemy){
-			if targetEnemy.alive{
-				stateChange(PlayerState.SLASH)
+	if global.unlockables.slash == 1 and slashesReady > 0{
+		targetEnemy = collision_circle(x,y,attackrange,oEnemy,0,1);
+		if instance_exists(targetEnemy) {
+			targetEnemy = instance_nearest(x,y,oEnemy);
+			if inputA  {
+				if targetEnemy.alive{
+					stateChange(PlayerState.SLASH)
+				}
 			}
 		}
 	}

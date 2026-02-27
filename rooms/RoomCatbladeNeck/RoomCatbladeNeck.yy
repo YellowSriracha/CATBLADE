@@ -7,13 +7,11 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_45A785DF_1_1_2","path":"rooms/RoomCatbladeNeck/RoomCatbladeNeck.yy",},
-    {"name":"inst_5D6D1C11","path":"rooms/RoomCatbladeNeck/RoomCatbladeNeck.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_45A785DF_1_1_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_45A785DF_1_1_2","objectId":{"name":"oCat","path":"objects/oCat/oCat.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":55.0,"y":146.0,},
-        {"$GMRInstance":"v2","%Name":"inst_5D6D1C11","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5D6D1C11","objectId":{"name":"oCollectible","path":"objects/oCollectible/oCollectible.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":567.0,"y":136.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"CollisionMap","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"CollisionMap","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
           -24,0,1,16,-15,47,-21,0,4,42,0,0,40,-11,28,1,8,-3,47,-21,0,1,32,-14,0,4,40,28,8,47,-21,0,1,44,-16,0,
