@@ -9,7 +9,9 @@ if(ensureResult[0] == true)
 
 if (Shader_ChromaticAbberation_IsEnabled())
 {
-	Shader_ChromaticAbberation_SetParameters(0.0, 36, 0.12);
+	var widthX = surface_get_width(post_process_surface_one);	
+	var heightY = surface_get_height(post_process_surface_one);
+	Shader_ChromaticAbberation_SetParameters(3.0, 0.0, 0.12, widthX, heightY);
 	Shader_ChromaticAbberation_Begin(application_surface);
 	apply_shader_pass(application_surface, post_process_surface_one);
 	Shader_ChromaticAbberation_End();

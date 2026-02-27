@@ -41,7 +41,7 @@ function Shader_ChromaticAbberation_End()
 // _numberOfPixelsSampledBeforeThreshold number of pixels to sample before the uv threshold.
 // _numberOfAdditionalPixelsSampledAfterThreshold number of pixels to sample after the uv threshold.
 // _uvDistortionMidPoint the textore coordinates midpoint for the uv sampling gradient. Choose a value between 0.0 and 1.0
-function Shader_ChromaticAbberation_SetParameters(_numberOfPixelsSampledBeforeThreshold, _numberOfAdditionalPixelsSampledAfterThreshold, _uvDistortionMidPoint)
+function Shader_ChromaticAbberation_SetParameters(_numberOfPixelsSampledBeforeThreshold, _numberOfAdditionalPixelsSampledAfterThreshold, _uvDistortionMidPoint, _maxX, _maxY)
 {
 	if (!variable_global_exists("globalPlayerPositionX"))
 	{
@@ -59,8 +59,8 @@ function Shader_ChromaticAbberation_SetParameters(_numberOfPixelsSampledBeforeTh
 	var px =  global.globalPlayerPositionX;
 	var py = global.globalPlayerPositionY;
 
-	var u = clamp(px / room_width, 0, 1);
-	var v = clamp(py / room_height, 0, 1);
+	var u = clamp(px / _maxX, 0, 1);
+	var v = clamp(py / _maxY, 0, 1);
 	
 	global.__sh_chromaticabberation_playerUvCoordinatesU = u;
 	global.__sh_chromaticabberation_playerUvCoordinatesV = v;
