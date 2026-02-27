@@ -135,8 +135,7 @@ if !paused {
 	if !global.slowmoActive{
 		if slowmoDuration < SLOWMOMAX {
 			slowmoDuration += 1;	
-		}else if inputM and global.unlockables.slowmo{
-			
+		}else if inputM and global.unlockables.slowmo{ 
 			scrStartSlowMo();
 		}
 	} else {
@@ -144,11 +143,12 @@ if !paused {
 		if slowmoDuration <= 0{
 			global.slowmoActive = false;	
 			//slowmoDuration= SLOWMOMAX;
+			Shader_ChromaticAbberation_Disable();
 			scrEndSlowMo();
 		}	
 		else
 		{
-			enableSlowMoShader(0.0, 36.0, 0.12);
+			Shader_ChromaticAbberation_Enable();
 		}
 	}
 	

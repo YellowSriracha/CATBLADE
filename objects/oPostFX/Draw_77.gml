@@ -1,24 +1,25 @@
 
-
-
-if (global.__sh_chromaticabberation_slowMoShaderEnabled == true)
+// Draws the shader to the surface at the end
+var ensureResult = ensure_post_process_surface(application_surface, post_process_surface_one);
+var anyShaderEnabled = Shader_ChromaticAbberation_IsEnabled();
+if(ensureResult[0] == true) 
 {
-	global.__sh_chromaticabberation_slowMoShaderEnabled = false;
-	application_surface_draw_enable(false);
-	setChromaticAbberationShader(
-			application_surface
-		, global.__sh_chromaticabberation_playerUvCoordinatesU
-		, global.__sh_chromaticabberation_playerUvCoordinatesV
-		, global.__sh_chromaticabberation_pixelsSampledBeforeThreshold
-		, global.__sh_chromaticabberation_pixelsSampledAfterThreshold
-		, global.__sh_chromaticabberation_uvDistortionMidPoint
-	);
+	post_process_surface_one = ensureResult[1];
+}
 
-	shader_reset();
+if (Shader_ChromaticAbberation_IsEnabled())
+{
+	Shader_ChromaticAbberation_SetParameters(0.0, 36, 0.12);
+	Shader_ChromaticAbberation_Begin(application_surface);
+	apply_shader_pass(application_surface, post_process_surface_one);
+	Shader_ChromaticAbberation_End();
+}
+
+if (anyShaderEnabled)
+{
+	final_output_surface = post_process_surface_one;
 }
 else
 {
-	application_surface_draw_enable(true);
+	final_output_surface = application_surface
 }
-
-

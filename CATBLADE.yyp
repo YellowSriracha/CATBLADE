@@ -122,6 +122,7 @@
     {"id":{"name":"scrDrawPixelOutlineShader","path":"scripts/scrDrawPixelOutlineShader/scrDrawPixelOutlineShader.yy",},},
     {"id":{"name":"scrOnDeath","path":"scripts/scrOnDeath/scrOnDeath.yy",},},
     {"id":{"name":"scrOnPause","path":"scripts/scrOnPause/scrOnPause.yy",},},
+    {"id":{"name":"scrPostFX","path":"scripts/scrPostFX/scrPostFX.yy",},},
     {"id":{"name":"scrRoomSearch","path":"scripts/scrRoomSearch/scrRoomSearch.yy",},},
     {"id":{"name":"scrSlowMo","path":"scripts/scrSlowMo/scrSlowMo.yy",},},
     {"id":{"name":"scrSound","path":"scripts/scrSound/scrSound.yy",},},

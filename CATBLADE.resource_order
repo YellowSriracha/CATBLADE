@@ -96,6 +96,7 @@
     {"name":"scrDrawPixelOutlineShader","order":3,"path":"scripts/scrDrawPixelOutlineShader/scrDrawPixelOutlineShader.yy",},
     {"name":"scrOnDeath","order":6,"path":"scripts/scrOnDeath/scrOnDeath.yy",},
     {"name":"scrOnPause","order":7,"path":"scripts/scrOnPause/scrOnPause.yy",},
+    {"name":"scrPostFX","order":10,"path":"scripts/scrPostFX/scrPostFX.yy",},
     {"name":"scrRoomSearch","order":5,"path":"scripts/scrRoomSearch/scrRoomSearch.yy",},
     {"name":"scrSlowMo","order":4,"path":"scripts/scrSlowMo/scrSlowMo.yy",},
     {"name":"scrSound","order":2,"path":"scripts/scrSound/scrSound.yy",},
