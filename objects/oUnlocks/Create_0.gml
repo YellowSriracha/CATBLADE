@@ -13,3 +13,15 @@ global.collectibles = {
 	red: 0,
 	green: 0	
 }
+
+function resetUnlocks(){
+	with global.unlockables{
+		climb = 0;
+		fastclimb= 0;
+		jump= 0;
+		slash= 0;
+		doubleslash= 0;
+		slowmo= 0;
+		ceilingclimb= 0;
+	}
+}

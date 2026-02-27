@@ -40,3 +40,13 @@ onPause = function(){
 onUnpause = function(){
 	paused = false;
 }	
+
+dieDefault = function(){
+	alive = false;
+	image_alpha = 0;
+	alarm[0]=120;
+}
+
+die = function(){
+	dieDefault();	
+}

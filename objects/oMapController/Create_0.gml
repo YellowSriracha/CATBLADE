@@ -17,6 +17,6 @@ mapData = [	[noone, RoomIntro, noone, noone, noone, noone, noone],
 			[RoomClimb, Room1,	Room2, RoomCatblade, RoomCatbladeNeck, noone, noone],
 			[noone, noone, RoomSplitRedLeft, RoomSplitRed, RoomSplitRedRight, RoomSlowMoGate, noone],
 			[noone, noone, noone, noone, RoomTransitionRedPurple, noone, noone],
-			[noone,noone,RoomPurpleSlowChallenge1,RoomPurpleLeft1,RoomSplit,RoomPurpleRight1, noone],
+			[noone,noone,RoomPurpleSlowChallenge1,RoomPurpleLeft1,RoomSplit,RoomPurpleRight1, RoomPurpleRight3],
 			[noone,RoomPurpleFastClimb,RoomPurpleSlowChallenge2,RoomPurpleLeft2,RoomSlowMoGateBottom,RoomPurpleRight2, RoomzUpgradePurpleSlowmo]
 		  ]

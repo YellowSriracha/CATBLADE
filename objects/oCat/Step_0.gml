@@ -20,6 +20,7 @@ switch(state){
 		if xsp == 0{
 			scrAnimationLoop(frameData.idle.first,frameData.idle.last);
 		}else {
+			footstepTimer -=3;
 			scrAnimationLoop(frameData.run.first,frameData.run.last);
 		}
 		takeInput();
@@ -58,6 +59,7 @@ switch(state){
 		if ysp == 0{
 			scrAnimationLoop(frameData.wall.hold,frameData.wall.hold);
 		}else {
+			footstepTimer = global.unlockables.fastclimb ? footstepTimer - 3 : footstepTimer - 1;
 			scrAnimationLoop(frameData.wallrun.first,frameData.wallrun.last);
 		}
 		ysp = 0;
@@ -102,15 +104,21 @@ switch(state){
 	break;
 	
 	case PlayerState.SLASH:
+	
 		image_index = frameData.air.hold;
 		move();
+		
 		if onWall {
 			alarm[0] = 1;
 		} else {
 			dir = sign(xsp);
-			xsp = lerp(xsp,0,0.04);	
-			ysp = lerp(ysp,0,0.04);	
+			xsp = lerp(xsp,0,0.06);	
+			ysp = lerp(ysp,0,0.06);	
 		}
+		
+		instance_create_layer(x,y,layer,oSlashParticle,{
+			image_angle: point_direction(x,y,(x-other.xsp),(y -other.ysp))
+			});
 	break;
 }
 
@@ -122,6 +130,10 @@ if !paused {
 		dir = inputXdir;
 		if !onWall image_xscale = inputXdir;
 	}
+	if footstepTimer <= 0{
+		footstepTimer = 50;
+			scrSfxFootstep()	
+		}
 
 	if global.unlockables.slash == 1 and !slashing and slashesReady > 0{
 		targetEnemy = collision_circle(x,y,70,oEnemy,0,1);
@@ -151,13 +163,12 @@ if !paused {
 			enableSlowMoShader(0.0, 36.0, 0.12);
 		}
 	}
-	
+		
 }
 
 if paused and alarm[0] >= 0 {
 	alarm[0] += 1;
 	alarm[1] += 1;
-	
 }
 
 updateGlobalPlayerPosition();
