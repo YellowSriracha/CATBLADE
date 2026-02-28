@@ -10,10 +10,11 @@ roomTransitionOnWall = false;
 
 lookup = true;
 
-global.mapIndex = [0, 1];
+global.mapIndex = [1, 1];
 
-mapData = [	[noone, RoomIntro, noone, noone, noone, noone, noone, noone],
-			[noone, RoomIntro2, RoomEnd, Room4, noone, noone, noone, noone],
+mapData = [	[noone, noone, noone, noone, noone, noone, noone, noone],
+			[noone, RoomIntro, noone, noone, RoomFinalDoor, noone, noone, noone],
+			[noone, RoomIntro2, noone, RoomCatbladeAbove, RoomCatbladeNeckAbove, noone, noone, noone],
 			[RoomClimb, Room1,	Room2, RoomCatblade, RoomCatbladeNeck, RoomCatbladeNeck2, RoomCatbladeNeck3, noone],
 			[noone, noone, RoomSplitRedLeft, RoomSplitRed, RoomSplitRedRight, RoomSlowMoGate, RoomCatbladeNeck4, noone],
 			[noone, noone, noone, noone, RoomTransitionRedPurple, noone, noone, RoomPurpleDoubleSlash],

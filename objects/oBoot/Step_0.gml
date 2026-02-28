@@ -4,5 +4,6 @@
 if global.htmlMode {
 	room_goto(rmClickToStart);
 } else {
+	oMapController.lookup = true;
 	room_goto_next();
 }

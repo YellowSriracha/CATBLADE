@@ -32,3 +32,9 @@ function scrSfxEnergyPulse(){
 	scrPlaySound(sfxEnergy,1.3,,1);
 }
 
+function scrSfxBossHit(){
+	
+	scrPlaySound(sfxBossHit,1,,1);
+}
+
+

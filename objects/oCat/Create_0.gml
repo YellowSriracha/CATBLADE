@@ -385,6 +385,9 @@ function updateGlobalPlayerPosition(){
 /// @param {ID.Instance}  _target	The id of the target to check
 /// @description					Checks if a target is valid as an attack target.
 function checkTargetValid(_target = noone){
+	if _target == oFinalBossHead {
+		return oFinalBossHead.hitstunFrames <= 0;
+	}
 	if _target == noone return false;
 	if onWall {
 		if dir == 1 and _target.x > x {
