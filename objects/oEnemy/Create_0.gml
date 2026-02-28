@@ -30,6 +30,8 @@ endSlowmo = function(){
 }
 
 onPlayerReset = function(){
+	alive = true;
+	image_alpha = 1;
 	return true;	
 }
 

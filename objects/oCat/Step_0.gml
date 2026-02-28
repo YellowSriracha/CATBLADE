@@ -139,15 +139,18 @@ if !paused {
 		if !onWall image_xscale = inputXdir;
 	}
 	if footstepTimer <= 0{
-		footstepTimer = 50;
-			scrSfxFootstep()	
-		}
+		footstepTimer = 70;
+		scrSfxFootstep()	
+	}
 
+	//TARGET PICK AND ATTACK INPUT==================================
 	if global.unlockables.slash == 1 and slashesReady > 0{
 		targetEnemy = collision_circle(x,y,attackrange,oEnemy,0,1);
 		if instance_exists(targetEnemy) {
-			targetEnemy = instance_nearest(x,y,oEnemy);
-			if inputA  {
+			targetEnemy = instance_nearest(x,y,oEnemy)
+			if !checkTargetValid(targetEnemy){
+				targetEnemy = noone;
+			}else if inputA  {
 				if targetEnemy.alive{
 					stateChange(PlayerState.SLASH)
 				}
@@ -155,24 +158,19 @@ if !paused {
 		}
 	}
 
+	//SLOW MO INPUT ======================================
 	if !global.slowmoActive{
 		if slowmoDuration < SLOWMOMAX {
 			slowmoDuration += 1;	
 		}else if inputM and global.unlockables.slowmo{ 
 			scrStartSlowMo();
 		}
-	} else {
+	} else if global.slowmoActive{
 		slowmoDuration -=1;
 		if slowmoDuration <= 0{
 			global.slowmoActive = false;	
-			//slowmoDuration= SLOWMOMAX;
-			Shader_ChromaticAbberation_Disable();
 			scrEndSlowMo();
-		}	
-		else
-		{
-			Shader_ChromaticAbberation_Enable();
-		}
+		}		
 	}
 		
 }

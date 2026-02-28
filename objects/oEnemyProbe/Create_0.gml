@@ -13,11 +13,13 @@ aggroCheck = function (){
 }
 
 startSlowmo = function(){
-	path_speed = defaultPathSpeed/3;
+	var _sign = sign(path_speed);
+	path_speed = defaultPathSpeed/3 * _sign;
 }
 	
 endSlowmo = function(){
-	path_speed = defaultPathSpeed;
+	var _sign = sign(path_speed);
+	path_speed = defaultPathSpeed * _sign;
 }
 
 onPause = function(){
@@ -31,6 +33,11 @@ onUnpause = function(){
 	paused = false;
 }
 
+onPlayerReset(){
+	t = 0;
+	path_speed = storedPathSpeed;	
+	
+}
 die = function(){
 	dieDefault();
 	for(var i = 0; i < 4;i++){

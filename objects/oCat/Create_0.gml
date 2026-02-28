@@ -341,6 +341,10 @@ function die(_direction = undefined){
 		stateChange(PlayerState.GROUND);
 		xsp = 0;
 		ysp = 0;
+		if global.slowmoActive{
+			scrEndSlowMo();
+			slowmoDuration = 0;
+		}
 		x = respawnPointX;
 		y = respawnPointY;
 		scrOnDeath();
@@ -377,4 +381,29 @@ function updateGlobalPlayerPosition(){
 	global.globalPlayerPositionY = y;
 }
 
+/// @function						checkTargetValid(message);
+/// @param {ID.Instance}  _target	The id of the target to check
+/// @description					Checks if a target is valid as an attack target.
+function checkTargetValid(_target = noone){
+	if _target == noone return false;
+	if onWall {
+		if dir == 1 and _target.x > x {
+			return false;	
+		}
+		if dir == -1 and _target.x < x {
+			return false;	
+		}
+	}
+	if onCeiling{
+		if _target.y < y return false;	
+	}
+	return !collision_line(x,y,_target.x, _target.y, collidables,1,0);	
+}
 
+if onCeiling{
+	stateChange(PlayerState.CEILING);
+} else if onWall {
+	stateChange(PlayerState.WALL);
+} else {
+	stateChange(PlayerState.GROUND);
+}
