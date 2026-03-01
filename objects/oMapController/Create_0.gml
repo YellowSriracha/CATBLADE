@@ -21,3 +21,5 @@ mapData = [	[noone, noone, noone, noone, noone, noone, noone, noone],
 			[noone,noone,RoomPurpleSlowChallenge1,RoomPurpleLeft1,RoomSplit,RoomPurpleRight1, RoomPurpleRight3, RoomPurpleRight4],
 			[noone,RoomPurpleFastClimb,RoomPurpleSlowChallenge2,RoomPurpleLeft2,RoomSlowMoGateBottom,RoomPurpleRight2, RoomzUpgradePurpleSlowmo, RoomPurpleRightBottomCorner]
 		  ]
+
+global.mapEvents = [0,0,0,0,0,0,0,0];
