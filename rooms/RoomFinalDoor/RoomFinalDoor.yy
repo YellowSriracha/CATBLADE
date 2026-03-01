@@ -19,8 +19,8 @@
           -4,0,4,16,20,20,36,-30,0,2,16,24,-4,0,5,16,47,47,2,36,-29,0,2,16,24,-4,0,1,16,-3,47,1,24,-29,0,2,40,
           38,-4,0,1,16,-3,47,1,24,-35,0,1,16,-3,47,1,24,-35,0,1,16,-3,47,1,24,-35,0,1,16,-3,47,1,24,-35,0,1,16,
           -3,47,1,24,-3,-2147483648,-25,0,8,34,20,20,36,0,0,34,1,-3,47,1,24,-5,-2147483648,-23,0,7,16,47,47,24,
-          0,0,16,-4,47,1,24,-5,-2147483648,-22,0,8,34,1,47,47,24,0,0,16,-4,47,1,24,-5,-2147483648,1,34,-21,20,
-          1,1,-3,47,5,2,20,20,1,47,
+          0,0,16,-4,47,1,24,-5,-2147483648,1,34,-22,20,7,1,47,47,24,0,0,16,-4,47,1,24,-5,-2147483648,1,16,-25,
+          47,5,2,20,20,1,47,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tilesetBlue","path":"tilesets/tilesetBlue/tilesetBlue.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles_1","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
           -165,-2147483648,-17,0,-23,-2147483648,-17,0,-23,-2147483648,-17,0,-23,-2147483648,-17,0,-23,-2147483648,
@@ -29,7 +29,7 @@
           -17,0,-23,-2147483648,-17,0,-138,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tilsetRedExtra","path":"tilesets/tilsetRedExtra/tilsetRedExtra.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
-        {"$GMRSpriteGraphic":"v1","%Name":"graphic_119F2FCA","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_119F2FCA","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sFinalDoor","path":"sprites/sFinalDoor/sFinalDoor.yy",},"x":316.0,"y":151.0,},
+        {"$GMRSpriteGraphic":"v1","%Name":"graphic_119F2FCA","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_119F2FCA","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"sFinalDoor","path":"sprites/sFinalDoor/sFinalDoor.yy",},"x":319.0,"y":135.0,},
       ],"depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Assets_1","properties":[],"resourceType":"GMRAssetLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"backgroundRuins","path":"sprites/backgroundRuins/backgroundRuins.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":true,"x":20,"y":16,},
   ],

@@ -1,5 +1,6 @@
 if keyboard_check_pressed(ord("R")){
-	room_goto(RoomIntro);
+	global.mapController.lookup = true;
+	room_goto(rmMainMenu);
 	global.unlockSystem.resetUnlocks();
 }
 
@@ -10,9 +11,12 @@ if keyboard_check_pressed(ord("U")){
 			doubleslash = 1;	
 		}
 		
+		if fastclimb == 1{
+			ceilingclimb = 1;	
+		}
 		if climb ==1 {
 			fastclimb = 1;
-		}
+		} 
 		
 		climb = 1;
 		//jump = 1;

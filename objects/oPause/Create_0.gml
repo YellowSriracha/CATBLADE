@@ -1,5 +1,13 @@
 global.paused = false;
 global.pauseDisabled  = false;
+
+global.options = {
+	musicVolume: 1,
+	volume: 1,
+	filterEnabled: 0,
+	filterIndex: 0
+}
+
 boxColor = c_black;
 textColor = #d14d19;
 textBoxWidth = 1000;

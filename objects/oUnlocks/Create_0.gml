@@ -11,7 +11,12 @@ global.unlockables = {
 global.collectibles = {
 	blue: 0,
 	red: 0,
-	green: 0	
+	green: 0,
+	yellow:0,
+	magenta:0,
+	cyan:0,
+	white:0,
+	black:0
 }
 
 function resetUnlocks(){

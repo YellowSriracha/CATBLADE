@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"Room1",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/Room1/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
@@ -30,11 +30,8 @@
           -4,0,-14,20,3,1,47,2,-5,20,1,1,-12,47,1,2,-4,20,-240,47,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tilesetRed","path":"tilesets/tilesetRed/tilesetRed.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"CollisionMapBG","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"CollisionMapBG","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
-          -2,47,1,24,-4,47,6,16,47,47,4,28,28,-27,0,-2,47,1,24,-4,47,6,16,47,47,24,-2147483648,-2147483648,-27,
-          0,3,47,4,38,-4,47,6,40,28,28,38,-2147483648,-2147483648,-27,0,2,47,24,-9,47,-2,-2147483648,-27,0,2,47,
-          24,-9,47,-2,-2147483648,-27,0,2,4,38,-9,47,2,0,-2147483648,-27,0,1,38,-10,47,-29,0,-11,47,-29,0,-14,
-          47,-26,0,-14,47,-26,0,-14,47,-26,0,-14,47,-26,0,-14,47,-26,0,-14,47,-26,0,-14,47,-26,0,-14,47,-26,0,
-          -14,20,-26,0,-14,47,-26,0,-14,47,-26,0,-14,47,-26,0,-14,47,-26,0,-80,47,
+          -2,47,1,24,-4,47,6,16,47,47,4,28,28,-29,47,1,24,-4,47,4,16,47,47,24,-30,47,2,4,38,-4,47,4,40,28,28,38,
+          -30,47,1,24,-39,47,1,24,-38,47,2,4,38,-38,47,1,38,-399,47,-14,20,-266,47,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tilesetRed","path":"tilesets/tilesetRed/tilesetRed.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"backgroundCaves44","path":"sprites/backgroundCaves44/backgroundCaves44.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
   ],

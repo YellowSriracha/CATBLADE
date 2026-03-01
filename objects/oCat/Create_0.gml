@@ -322,6 +322,7 @@ function SetSpawnPoint(){
 	ysp = global.mapController.roomSpawnYsp;
 	global.roomTransition = false;
 	onWall = global.mapController.roomTransitionOnWall;
+	onCeiling = global.mapController.roomTransitionOnCeiling;
 	if onWall {
 		dir = global.mapController.roomTransitionDir;
 	}

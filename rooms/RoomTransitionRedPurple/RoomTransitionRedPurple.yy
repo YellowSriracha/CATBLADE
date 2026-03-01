@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"RoomTransitionRedPurple",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/RoomTransitionRedPurple/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
@@ -11,10 +11,10 @@
   "isDnd":false,
   "layers":[
     {"$GMRTileLayer":"","%Name":"Tiles_2","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_2","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
-          -560,-2147483648,-6,47,1,2,-3,20,1,36,-29,-2147483648,-10,47,2,2,36,-14,-2147483648,2,0,34,-12,20,-11,
-          47,1,24,-14,-2147483648,2,0,16,-23,47,3,2,20,36,-12,-2147483648,2,0,16,-25,47,1,24,-12,-2147483648,2,
-          0,16,-25,47,1,24,-12,-2147483648,2,0,16,-25,47,1,24,-12,-2147483648,2,0,16,-25,47,1,24,-11,-2147483648,
-          -2,0,1,16,-25,47,1,24,-11,-2147483648,-2,0,1,16,-12,47,
+          -560,-2147483648,-10,20,1,36,-29,-2147483648,-10,47,2,2,36,-14,-2147483648,2,0,34,-12,20,-11,47,1,24,
+          -14,-2147483648,2,0,16,-23,47,3,2,20,36,-12,-2147483648,2,0,16,-25,47,1,24,-12,-2147483648,2,0,16,-25,
+          47,1,24,-12,-2147483648,2,0,16,-25,47,1,24,-12,-2147483648,2,0,16,-25,47,1,24,-11,-2147483648,-2,0,1,
+          16,-25,47,1,24,-11,-2147483648,-2,0,1,16,-12,47,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tilesetPurple","path":"tilesets/tilesetPurple/tilesetPurple.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"CollisionMap","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"CollisionMap","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
           -19,47,1,24,-5,-2147483648,1,16,-33,47,1,24,-5,-2147483648,1,16,-29,47,1,4,-3,28,1,38,-5,-2147483648,

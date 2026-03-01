@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"RoomPurpleRight3",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/RoomPurpleRight3/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
@@ -11,7 +11,7 @@
   ],
   "isDnd":false,
   "layers":[
-    {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+    {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_45A785DF_4_1_1_1_2_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_45A785DF_4_1_1_1_2_1","objectId":{"name":"oCat","path":"objects/oCat/oCat.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":37.0,"y":268.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Enemies","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
@@ -26,10 +26,10 @@
           -4,47,1,24,-32,0,2,40,8,-5,47,1,24,-33,0,2,40,28,-4,47,1,24,-35,0,-3,47,2,4,38,-35,0,-3,47,1,24,-36,
           0,-2,47,2,4,38,-8,0,1,42,-27,0,-2,47,1,24,-9,0,1,32,-27,0,-2,47,1,24,-9,0,1,44,-27,0,-2,47,1,24,-37,
           0,-2,47,1,24,-7,0,1,42,-19,0,1,34,-9,20,-2,47,1,24,-7,0,1,32,-19,0,1,16,-9,47,-2,28,1,38,-7,0,1,44,-19,
-          0,4,40,28,28,8,-6,47,-33,0,3,40,28,8,-4,47,-8,0,1,42,-26,0,1,16,-4,47,-8,0,1,32,-26,0,1,16,-4,47,-8,
-          0,1,32,-26,0,1,16,-4,47,-7,0,2,34,26,-26,0,1,16,-4,47,-5,0,4,34,20,1,24,-25,0,2,34,1,-4,47,-3,0,6,34,
-          20,5,28,28,38,-25,0,1,16,-5,47,-3,20,3,5,28,38,-27,0,2,34,1,-8,47,1,24,-28,0,2,34,1,-9,47,1,24,-26,0,
-          3,34,20,1,-10,47,1,24,-26,0,1,16,-9,47,
+          0,4,40,28,28,8,-6,47,-33,0,2,40,8,-5,47,-8,0,1,42,-25,0,1,16,-5,47,-8,0,1,32,-25,0,1,16,-5,47,-8,0,1,
+          32,-9,0,1,34,-5,20,1,36,-9,0,1,16,-5,47,-7,0,2,34,26,-9,0,1,40,-5,28,1,38,-9,0,1,16,-5,47,-5,0,4,34,
+          20,1,24,-25,0,1,16,-5,47,-3,0,6,34,20,5,28,28,38,-18,0,2,34,36,-5,0,1,16,-5,47,-3,20,3,5,28,38,-21,0,
+          2,40,38,-5,0,1,16,-8,47,1,24,-29,0,2,34,1,-8,47,1,24,-26,0,4,34,20,20,1,-9,47,1,24,-26,0,1,16,-9,47,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tilesetPurple","path":"tilesets/tilesetPurple/tilesetPurple.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"sZoneDark","path":"sprites/sZoneDark/sZoneDark.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
   ],

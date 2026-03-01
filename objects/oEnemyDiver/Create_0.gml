@@ -22,7 +22,7 @@ aggroCheck = function(){
 }
 
 aggroCondition = function(){
-	return abs(x-oCat.x) < 150;
+	return abs(x-oCat.x) < 80;
 }
 
 function steer(){

@@ -110,7 +110,7 @@ switch(state){
 		grav = 0;
 		move();
 		
-		if onWall or onGround() {
+		if onWall or onGround() or onCeiling {
 			alarm[0] = 1;
 		} else {
 			dir = sign(xsp);

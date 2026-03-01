@@ -1,1 +1,0 @@
-path_start(Path1x4,-2,path_action_reverse,0);

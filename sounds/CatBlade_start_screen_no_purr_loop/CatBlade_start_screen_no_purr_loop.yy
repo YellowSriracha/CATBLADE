@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"CatBlade_start_screen_no_purr_loop",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":29.53848,
+  "name":"CatBlade_start_screen_no_purr_loop",
+  "parent":{
+    "name":"Music",
+    "path":"folders/Sounds/Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"CatBlade_start_screen_no_purr_loop.wav",
+  "type":0,
+  "volume":0.5,
+}

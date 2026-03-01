@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"RoomSplit",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/RoomSplit/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,

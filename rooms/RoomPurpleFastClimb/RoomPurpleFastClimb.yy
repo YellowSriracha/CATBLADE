@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"RoomPurpleFastClimb",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/RoomPurpleFastClimb/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,

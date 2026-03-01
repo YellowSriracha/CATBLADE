@@ -7,21 +7,28 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_45A785DF_1_1_3","path":"rooms/RoomCatbladeAbove/RoomCatbladeAbove.yy",},
+    {"name":"inst_62F3397F","path":"rooms/RoomCatbladeAbove/RoomCatbladeAbove.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRLayer":"","%Name":"Folder_1","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Folder_1","properties":[],"resourceType":"GMRLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_45A785DF_1_1_3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_45A785DF_1_1_3","objectId":{"name":"oCat","path":"objects/oCat/oCat.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":529.0,"y":274.0,},
+        {"$GMRInstance":"v2","%Name":"inst_62F3397F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":7,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_62F3397F","objectId":{"name":"oCollectible","path":"objects/oCollectible/oCollectible.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":191.0,"y":225.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRTileLayer":"","%Name":"CollisionMap","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"CollisionMap","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
-          -3,47,1,24,-5,0,1,16,-7,47,1,24,-10,0,1,16,-14,47,1,24,-5,0,3,40,28,8,-3,47,3,4,28,38,-10,0,3,40,28,
-          8,-12,47,1,24,-7,0,5,16,4,28,28,38,-14,0,1,40,-12,28,1,38,-7,0,2,40,38,-73,0,2,34,36,-38,0,3,16,2,36,
-          -36,0,6,34,1,47,2,20,36,-29,0,-5,20,1,1,-4,47,1,2,-29,20,-129,47,1,4,-30,28,-9,47,1,24,-30,0,-9,47,1,
-          24,-30,0,-9,47,1,24,-30,0,-9,47,1,24,-30,0,-9,47,1,2,-4,20,2,21,45,-24,0,-11,47,4,4,28,28,38,-25,0,-9,
-          47,3,4,28,38,-28,0,-9,47,1,24,-30,0,-9,47,1,24,-30,0,-9,47,1,24,-30,0,
+    {"$GMRTileLayer":"","%Name":"Tiles_1","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
+          -3,47,1,24,-5,-2147483648,1,16,-7,47,1,4,-5,28,1,8,-19,47,1,24,-5,-2147483648,1,40,-3,28,5,8,47,4,28,
+          38,-5,-2147483648,1,40,-6,28,1,8,-12,47,1,24,-9,-2147483648,3,40,28,38,-14,-2147483648,1,40,-12,28,1,
+          38,-36,-2147483648,1,0,-759,-2147483648,
+        ],"TileDataFormat":1,},"tilesetId":{"name":"tilesetBlue","path":"tilesets/tilesetBlue/tilesetBlue.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"$GMRTileLayer":"","%Name":"CollisionMap","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"CollisionMap","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
+          -3,47,1,24,-5,0,1,16,-7,47,1,4,-5,28,1,8,-19,47,1,24,-5,0,1,40,-3,28,5,8,47,4,28,38,-5,0,1,40,-6,28,
+          1,8,-12,47,1,24,-9,0,3,40,28,38,-14,0,1,40,-12,28,1,38,-82,0,2,34,36,-38,0,3,16,2,36,-36,0,5,34,1,47,
+          2,36,-30,0,-5,20,1,1,-3,47,1,2,-30,20,-129,47,1,4,-30,28,-9,47,1,24,-30,0,-9,47,1,24,-30,0,-9,47,1,24,
+          -30,0,-9,47,1,24,-30,0,-9,47,1,2,-4,20,2,21,45,-24,0,-11,47,4,4,28,28,38,-25,0,-9,47,3,4,28,38,-28,0,
+          -9,47,1,24,-30,0,-9,47,1,24,-30,0,-9,47,1,24,-30,0,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tilesetRed","path":"tilesets/tilesetRed/tilesetRed.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"backgroundCaves44","path":"sprites/backgroundCaves44/backgroundCaves44.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
+    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"backgroundCaves44","path":"sprites/backgroundCaves44/backgroundCaves44.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
   ],
   "name":"RoomCatbladeAbove",
   "parent":{

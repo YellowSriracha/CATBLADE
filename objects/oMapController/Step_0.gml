@@ -32,16 +32,17 @@ if instance_exists(oCat) {
 	}
 
 	if global.roomTransition {
-		if global.mapController.roomSide % 2 != 0 {
-			global.mapController.roomSpawnX = oCat.x;	
+		if roomSide % 2 != 0 {
+			roomSpawnX = oCat.x;	
 		} else {
-			global.mapController.roomSpawnY = oCat.y;
+			roomSpawnY = oCat.y;
 		}
 	
-		global.mapController.roomSpawnYsp = oCat.ysp;
+		roomSpawnYsp = oCat.ysp;
 		global.roomTransition = true;
-		global.mapController.roomTransitionOnWall = oCat.onWall;
-		global.mapController.roomTransitionDir = oCat.dir;
+		roomTransitionOnWall = oCat.onWall;
+		roomTransitionOnCeiling = oCat.onCeiling;
+		roomTransitionDir = oCat.dir;
 	
 		var _room = mapData[global.mapIndex[0]][global.mapIndex[1]];
 		if _room == noone {

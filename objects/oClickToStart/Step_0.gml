@@ -16,4 +16,4 @@ if clicked and image_index > 8 {
 	transition = true;
 }
 
-if transitionBoxY < -10 room_goto(RoomIntro)
+if transitionBoxY < -10 room_goto(rmMainMenu)

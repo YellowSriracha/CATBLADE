@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"CatBlade_B_medium_intensity_loop",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":29.539228,
+  "name":"CatBlade_B_medium_intensity_loop",
+  "parent":{
+    "name":"Music",
+    "path":"folders/Sounds/Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"CatBlade_B_medium_intensity_loop.wav",
+  "type":0,
+  "volume":1.0,
+}

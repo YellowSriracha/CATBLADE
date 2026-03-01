@@ -22,3 +22,5 @@ if instance_exists(oCat){
 
 	draw_text(01,450,"onCeiling:" + string(oCat.onCeiling));
 }
+
+	draw_text(01,490,"Music Volume:" + string(global.musicVolume));

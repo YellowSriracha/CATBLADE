@@ -1,16 +1,36 @@
 image_speed = 0;
 
-index = variable_struct_get(global.collectibles,variableName);
+
 t = 0;
 
+
+switch(image_index){
+	case 0:	
+		variableName = "red";
+	break;
+	case 1:	
+		variableName = "blue";
+	break;
+	case 2:	
+		variableName = "green";
+	break;
+	case 3:	
+		variableName = "yellow";
+	break;
+	case 4:	
+		variableName = "magenta";
+	break;
+	case 5:	
+		variableName = "cyan";
+	break;
+	case 6:	
+		variableName = "white";
+	break;
+	case 7:	
+		variableName = "black";
+	break;
+}
+index = variable_struct_get(global.collectibles,variableName);
 if index == 1 {
 	instance_destroy()	
-}
-
-if variableName == "red" {
-		image_index = 0;
-} else if variableName == "blue" {
-		image_index = 2;
-}else if variableName = "green" {
-		image_index = 1;
 }

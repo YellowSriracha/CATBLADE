@@ -1,8 +1,8 @@
 {
   "$GMSprite":"",
   "%Name":"sEnemyDiver",
-  "bboxMode":0,
-  "bbox_bottom":25,
+  "bboxMode":2,
+  "bbox_bottom":23,
   "bbox_left":0,
   "bbox_right":12,
   "bbox_top":0,
