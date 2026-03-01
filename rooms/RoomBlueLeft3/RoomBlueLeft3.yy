@@ -1,27 +1,23 @@
 {
   "$GMRoom":"v1",
-  "%Name":"RoomBlueLeft2",
-  "creationCodeFile":"rooms/RoomBlueLeft2/RoomCreationCode.gml",
+  "%Name":"RoomBlueLeft3",
+  "creationCodeFile":"rooms/RoomBlueLeft3/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_4704CFB5_1_1","path":"rooms/RoomBlueLeft2/RoomBlueLeft2.yy",},
+    {"name":"inst_4704CFB5_1_1_1","path":"rooms/RoomBlueLeft3/RoomBlueLeft3.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v2","%Name":"inst_4704CFB5_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4704CFB5_1_1","objectId":{"name":"oCat","path":"objects/oCat/oCat.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":170.0,"y":344.0,},
+        {"$GMRInstance":"v2","%Name":"inst_4704CFB5_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4704CFB5_1_1_1","objectId":{"name":"oCat","path":"objects/oCat/oCat.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":170.0,"y":344.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRTileLayer":"","%Name":"CollisionMap","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"CollisionMap","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
-          -40,47,-39,28,1,8,-39,0,1,16,-39,0,1,16,-35,0,1,43,-3,33,1,29,-316,0,4,43,33,33,22,-39,0,1,16,-39,0,
-          1,16,-39,0,1,16,-39,0,1,16,-39,0,1,16,-39,0,1,16,-4,0,-3,-2147483648,-32,0,1,16,-6,0,-3,-2147483648,
-          -30,0,1,16,-6,0,-3,-2147483648,-30,0,1,16,-39,20,1,1,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"tilesetBlue","path":"tilesets/tilesetBlue/tilesetBlue.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"$GMRTileLayer":"","%Name":"CollisionMap","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"CollisionMap","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[-40,47,-40,28,-684,0,-3,-2147483648,-39,0,-3,-2147483648,-37,0,-3,-2147483648,-31,0,-40,20,],"TileDataFormat":1,},"tilesetId":{"name":"tilesetBlue","path":"tilesets/tilesetBlue/tilesetBlue.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[],"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Assets_1","properties":[],"resourceType":"GMRAssetLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"backgroundRuins","path":"sprites/backgroundRuins/backgroundRuins.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":true,"x":20,"y":16,},
   ],
-  "name":"RoomBlueLeft2",
+  "name":"RoomBlueLeft3",
   "parent":{
     "name":"Rooms",
     "path":"folders/Rooms.yy",

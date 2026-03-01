@@ -1,1 +1,1 @@
-scrMusicStart(track1);
+scrMusicStart(track8, true);

@@ -1,8 +1,10 @@
-#macro track1 CatBlade_A_low_intensity_loop
+#macro track1 CatBlade_D_low_intensity_ver_2_slow_bass_alt_loop
 #macro track2 CatBlade_B_medium_intensity_loop
 #macro track3 CatBlade_C_Boss_Battle_loop
 #macro track5 CatBlade_start_screen_with_purr_loop
 #macro track6 CatBlade_Upgrade_stinger
+#macro track7 CatBlade_A_low_intensity_loop
+#macro track8 CatBlade_D_low_intensity_ver_2_slow_bass_loop
 #macro musicgain 0.6
 
 global.bgm = sfxAlert;
@@ -23,7 +25,7 @@ function scrMusicSetVolume(_time = 0){
 	audio_sound_gain(global.bgm,global.musicVolume*musicgain,_time);
 }
 
-function scrMusicStart(_id){
+function scrMusicStart(_id, _syncTime = false){
 	global.musicVolume = global.options.musicVolume;
 	if _id != global.bgm{
 		audio_stop_sound(global.bgm);

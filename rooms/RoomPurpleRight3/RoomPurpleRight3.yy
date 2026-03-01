@@ -8,11 +8,15 @@
   "instanceCreationOrder":[
     {"name":"inst_45A785DF_4_1_1_1_2_1","path":"rooms/RoomPurpleRight3/RoomPurpleRight3.yy",},
     {"name":"inst_67EB6759_1","path":"rooms/RoomPurpleRight3/RoomPurpleRight3.yy",},
+    {"name":"inst_3F83DE9B","path":"rooms/RoomPurpleRight3/RoomPurpleRight3.yy",},
+    {"name":"inst_3F5EAC13","path":"rooms/RoomPurpleRight3/RoomPurpleRight3.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_45A785DF_4_1_1_1_2_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_45A785DF_4_1_1_1_2_1","objectId":{"name":"oCat","path":"objects/oCat/oCat.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":37.0,"y":268.0,},
+        {"$GMRInstance":"v2","%Name":"inst_3F83DE9B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3F83DE9B","objectId":{"name":"oRespawnPoint","path":"objects/oRespawnPoint/oRespawnPoint.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":558.0,"y":137.0,},
+        {"$GMRInstance":"v2","%Name":"inst_3F5EAC13","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":2,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3F5EAC13","objectId":{"name":"oRespawnPoint","path":"objects/oRespawnPoint/oRespawnPoint.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":26.0,"y":297.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Enemies","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_67EB6759_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_67EB6759_1","objectId":{"name":"oEnemyLauncher","path":"objects/oEnemyLauncher/oEnemyLauncher.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":155.0,},
@@ -23,8 +27,8 @@
           -2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tilesetRed","path":"tilesets/tilesetRed/tilesetRed.yy",},"userdefinedDepth":false,"visible":false,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"CollisionMap","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"CollisionMap","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
-          -4,47,1,24,-32,0,2,40,8,-5,47,1,24,-33,0,2,40,28,-4,47,1,24,-35,0,-3,47,2,4,38,-35,0,-3,47,1,24,-36,
-          0,-2,47,2,4,38,-8,0,1,42,-27,0,-2,47,1,24,-9,0,1,32,-27,0,-2,47,1,24,-9,0,1,44,-27,0,-2,47,1,24,-37,
+          -5,47,1,24,-31,0,2,40,8,-6,47,1,24,-32,0,2,40,28,-5,47,1,24,-34,0,-5,47,1,24,-34,0,-4,47,2,4,38,-34,
+          0,-3,47,2,4,38,-7,0,1,42,-27,0,-2,47,2,4,38,-8,0,1,32,-27,0,-2,47,1,24,-9,0,1,44,-27,0,-2,47,1,24,-37,
           0,-2,47,1,24,-7,0,1,42,-19,0,1,34,-9,20,-2,47,1,24,-7,0,1,32,-19,0,1,16,-9,47,-2,28,1,38,-7,0,1,44,-19,
           0,4,40,28,28,8,-6,47,-33,0,2,40,8,-5,47,-8,0,1,42,-25,0,1,16,-5,47,-8,0,1,32,-25,0,1,16,-5,47,-8,0,1,
           32,-9,0,1,34,-5,20,1,36,-9,0,1,16,-5,47,-7,0,2,34,26,-9,0,1,40,-5,28,1,38,-9,0,1,16,-5,47,-5,0,4,34,
