@@ -1,6 +1,7 @@
-if global.input.selectKey {
+global.pauseDisabled = true;
+
+if global.input.selectKey or global.input.pausePressed {
 	
 	instance_destroy();	
 }
 
-global.pauseDisabled = true;

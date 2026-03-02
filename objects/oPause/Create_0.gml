@@ -15,3 +15,6 @@ textBoxHeight = 900;
 xpadding = 40;
 ypadding = 20;
 
+upgradeIcons = [sUpgradeIcon_Climb, sUpgradeIcon_FastClimb, sUpgradeIcon_SlowMo, sUpgradeIcon_DoubleSlash, sUpgradeIcon_Ceiling]
+
+password = 0;

@@ -1,5 +1,5 @@
 event_inherited();
-text = "Ultra Reflexes unlocked!\n\nPress X to activate slow motion mode \n\n Press Enter to continue";
+text = "Ultra Reflexes unlocked!\n\nPress X to slow down time around you. ";
 if global.unlockables.slowmo {
 	instance_destroy();	
 }

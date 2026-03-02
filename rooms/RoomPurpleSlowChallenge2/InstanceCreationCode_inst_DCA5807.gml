@@ -1,1 +1,1 @@
-path_start(Path1x10x1,2,path_action_reverse,0);
+path_start(Path10x1,2,path_action_reverse,0);

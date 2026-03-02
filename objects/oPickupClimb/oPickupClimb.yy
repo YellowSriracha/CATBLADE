@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sUpgradeIcon_FastClimb",
-    "path":"sprites/sUpgradeIcon_FastClimb/sUpgradeIcon_FastClimb.yy",
+    "name":"sUpgradeIcon_Climb",
+    "path":"sprites/sUpgradeIcon_Climb/sUpgradeIcon_Climb.yy",
   },
   "spriteMaskId":null,
   "visible":true,

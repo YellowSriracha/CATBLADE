@@ -8,7 +8,7 @@ function scrWindowResize(){
 	var base_h = 360;
 	var aspect = 640 / 360;
 
-	var _windowW = display_get_width()*0.75;
+	var _windowW = display_get_width();
 	var _windowX = global.htmlMode ? 0: 100;
 	var _windowY = global.htmlMode ? 0: 100;
 	if global.htmlMode {
@@ -16,8 +16,8 @@ function scrWindowResize(){
 	}
 	var _windowH = _windowW / aspect;
 
-	window_set_rectangle(_windowX, _windowY, _windowW,_windowH);
-
+	window_set_rectangle(0, 0, _windowW,_windowH);
+	window_set_fullscreen(1)
 	display_set_gui_size(1920,1080)
 
 

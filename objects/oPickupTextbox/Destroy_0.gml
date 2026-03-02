@@ -1,2 +1,2 @@
-oCat.unpause();
+scrOnUnpause();
 global.pauseDisabled = false;

@@ -1,0 +1,1 @@
+text = "Welcome, warrior.\n\nThis temple will test your skill and resolve.\n\nPersist, however, and you will find what you seek."

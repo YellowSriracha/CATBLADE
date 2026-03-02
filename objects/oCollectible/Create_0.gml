@@ -9,10 +9,10 @@ switch(image_index){
 		variableName = "red";
 	break;
 	case 1:	
-		variableName = "blue";
+		variableName = "green";
 	break;
 	case 2:	
-		variableName = "green";
+		variableName = "blue";
 	break;
 	case 3:	
 		variableName = "yellow";

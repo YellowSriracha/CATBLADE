@@ -52,7 +52,7 @@ xsp = 0;
 ysp = 0;
 
 footstepTimer = 5;
-
+global.pauseDisabled = false;
 
 //Animation Frame Indexes
 frameData = {
@@ -168,6 +168,7 @@ function move(){
 
 function stateChange(_state){
 	image_speed = 1;
+	image_yscale = 1;
 	switch(_state){
 		case PlayerState.GROUND:
 			slashesReady = 1;
@@ -335,7 +336,7 @@ function die(_direction = undefined){
 			_body.setDirection(_direction);
 		}
 		alive = false;
-		scrPlaySound(sfxDeathMeow)
+		scrPlaySound(sfxDeathMeow,,,random_range(0.5,1.5))
 		grav = defaultgrav;
 		slashing = false;
 		alarm[0] = -1;

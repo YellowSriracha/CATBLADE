@@ -134,17 +134,17 @@ function pack_room_data_to_int(_saveData)
 
     // TODO: Pack unlocks
     packedInt = pack_bool_into_int(packedInt, _saveData.unlocks.climb,       shiftDict.climb);
-    packedInt = pack_bool_into_int(packedInt, _saveData.unlocks.fastClimb,   shiftDict.fastClimb);
+    packedInt = pack_bool_into_int(packedInt, _saveData.unlocks.fastclimb,   shiftDict.fastClimb);
     packedInt = pack_bool_into_int(packedInt, _saveData.unlocks.jump,        shiftDict.jump);
     packedInt = pack_bool_into_int(packedInt, _saveData.unlocks.slash,       shiftDict.slash);
-    packedInt = pack_bool_into_int(packedInt, _saveData.unlocks.doubleSlash, shiftDict.doubleSlash);
+    packedInt = pack_bool_into_int(packedInt, _saveData.unlocks.doubleslash, shiftDict.doubleSlash);
 
     // TODO: Pack collectibles
     packedInt = pack_bool_into_int(packedInt, _saveData.collectibles.blue,      shiftDict.blue);
     packedInt = pack_bool_into_int(packedInt, _saveData.collectibles.red,       shiftDict.red);
     packedInt = pack_bool_into_int(packedInt, _saveData.collectibles.green,     shiftDict.green);
     packedInt = pack_bool_into_int(packedInt, _saveData.collectibles.yellow,    shiftDict.yellow);
-    packedInt = pack_bool_into_int(packedInt, _saveData.collectibles.magentia,  shiftDict.magentia);
+    packedInt = pack_bool_into_int(packedInt, _saveData.collectibles.magenta,  shiftDict.magentia);
 
     // TODO: Pack map events (assumes array of at least 8 bools)
     packedInt = pack_bool_into_int(packedInt, _saveData.mapEvents[0], shiftDict.mapEvent1);
@@ -177,7 +177,7 @@ function unpack_room_data_from_int(_packedInt)
         red:            30,
         green:          31,
         yellow:         32,
-        magentia:       33,
+        magenta:       33,
         mapEvent1:      34,
         mapEvent2:      35,
         mapEvent3:      36,

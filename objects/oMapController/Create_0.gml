@@ -13,8 +13,8 @@ lookup = true;
 
 global.mapIndex = [1, 1];
 
-mapData = [	[noone, noone, RoomBlueLeft2, noone, noone, noone, noone, noone],
-			[noone, RoomIntro, noone, RoomFinalDoor, noone, noone, noone, noone],
+mapData = [	[noone, RoomBlueLeft3, RoomBlueLeft2, noone, noone, noone, noone, noone],
+			[noone, RoomIntro, RoomBlueLeft, RoomBlueFinalDoor, RoomBlueRight, noone, noone, noone],
 			[noone, RoomIntro2, Room3, RoomCatbladeAbove, RoomCatbladeNeckAbove, RoomCatbladeNeck2Above, RoomBlueRedTransition, noone],
 			[RoomClimb, Room1,	Room2, RoomCatblade, RoomCatbladeNeck, RoomCatbladeNeck2, RoomCatbladeNeck3, noone],
 			[noone, noone, RoomSplitRedLeft, RoomSplitRed, RoomSplitRedRight, RoomSlowMoGate, RoomCatbladeNeck4, noone],
