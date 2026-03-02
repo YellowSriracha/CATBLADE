@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrSaveDataPasswordCreation",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrSaveDataPasswordCreation",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

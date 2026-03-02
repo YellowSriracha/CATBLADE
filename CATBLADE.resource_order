@@ -132,6 +132,7 @@
     {"name":"scrPhysicsMove","order":10,"path":"scripts/scrPhysicsMove/scrPhysicsMove.yy",},
     {"name":"scrPostFX","order":10,"path":"scripts/scrPostFX/scrPostFX.yy",},
     {"name":"scrRoomSearch","order":5,"path":"scripts/scrRoomSearch/scrRoomSearch.yy",},
+    {"name":"scrSaveDataPasswordCreation","order":11,"path":"scripts/scrSaveDataPasswordCreation/scrSaveDataPasswordCreation.yy",},
     {"name":"scrSlowMo","order":4,"path":"scripts/scrSlowMo/scrSlowMo.yy",},
     {"name":"scrSound","order":2,"path":"scripts/scrSound/scrSound.yy",},
     {"name":"scrSoundSystem","order":8,"path":"scripts/scrSoundSystem/scrSoundSystem.yy",},
