@@ -4,3 +4,8 @@ view_enabled = true;
 scrWindowResize();
 alarm[0] = 60;
 
+if global.paused {
+	global.paused = false;
+	scrOnUnpause();
+}
+

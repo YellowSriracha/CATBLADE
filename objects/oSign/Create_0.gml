@@ -1,4 +1,4 @@
 delay = 20;
 t = 0;
-drawArrow = false;
-text = "A true blade master knows their limits. Attacking twice in mid air is thought to be impossible. Land on the ground or a wall to regain your stamina.";
+drawArrow = false; 
+text = "Legends tell of a forbidden sword technique that allows its wielder to conserve stamina in mid-air. Such a technique would be best be hidden in a deep, dark place.";

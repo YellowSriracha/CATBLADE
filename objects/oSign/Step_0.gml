@@ -3,9 +3,10 @@ if !instance_exists(oPickupTextbox){
 	global.pauseDisabled = false;
 	if delay > 0 {
 		delay -=1;
-	} else if distance_to_object(oCat) < 40{
+	} else if distance_to_object(oCat) < 30{
 			drawArrow = true;
 			if global.input.upKeyPressed or global.input.selectKey {
+				global.input.selectKey = false;
 				global.pauseDisabled = true;
 				with oCat{
 					pause();	

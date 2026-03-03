@@ -31,6 +31,13 @@ if instance_exists(targetEnemy){
 		//draw_sprite(sTarget,0,targetEnemy.x,targetEnemy.y);
 	}
 }
+if slashesReady == 0{
+	draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,0,c_gray,1);	
+	if !instance_exists(oExaustionParticle){
+		instance_create_layer(random_range(bbox_left,bbox_right),y,layer,oExaustionParticle);	
+	}
+}
+
 
 if slowmoDuration < SLOWMOMAX {
 	draw_sprite(sManabar,26*(slowmoDuration/SLOWMOMAX),x,y-20);	

@@ -354,7 +354,9 @@ function die(_direction = undefined){
 	}
 	var _body = instance_create_layer(x,y,layer,oCatBody);
 	if !is_undefined(_direction) {
-		_body.setDirection(_direction);
+		with _body {
+			setDirection(_direction);
+		}
 	}
 	alive = false;
 	scrPlaySound(sfxDeathMeow,,,random_range(0.7,1.5))
@@ -412,6 +414,7 @@ function checkTargetValid(_target = noone){
 		return oFinalBossHead.hitstunFrames <= 0;
 	}
 	if _target == noone return false;
+	if _target == oEnemyTurret return false;
 	if onWall {
 		if dir == 1 and _target.x > x {
 			return false;	

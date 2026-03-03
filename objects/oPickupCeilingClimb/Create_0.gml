@@ -1,6 +1,6 @@
 event_inherited();
-text = "Fast Climb unlocked!\n\n You can now scale walls at a much quicker pace.";
+text = "Gravity Claws unlocked!\n\n Hold up to cling to ceilings.";
 
-if global.unlockables.fastclimb {
+if global.unlockables.ceilingclimb {
 	instance_destroy();	
 }

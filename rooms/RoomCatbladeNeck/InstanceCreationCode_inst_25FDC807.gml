@@ -4,3 +4,5 @@ if global.unlockables.slash{
 } else {
 	scrMusicStart(track1);	
 }
+
+text = "A true sword master knows their limits. Only one attack can be performed before landing on the ground and recovering your strength.";

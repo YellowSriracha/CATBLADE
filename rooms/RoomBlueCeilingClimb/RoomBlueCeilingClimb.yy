@@ -36,7 +36,7 @@
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v2","%Name":"inst_4704CFB5_1_3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4704CFB5_1_3","objectId":{"name":"oCat","path":"objects/oCat/oCat.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":241.0,"y":100.0,},
+        {"$GMRInstance":"v2","%Name":"inst_4704CFB5_1_3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4704CFB5_1_3","objectId":{"name":"oCat","path":"objects/oCat/oCat.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":153.0,"y":89.0,},
         {"$GMRInstance":"v2","%Name":"inst_6332FC4D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6332FC4D","objectId":{"name":"oPickupCeilingClimb","path":"objects/oPickupCeilingClimb/oPickupCeilingClimb.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":525.0,"y":240.0,},
         {"$GMRInstance":"v2","%Name":"inst_7CBA7887","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7CBA7887","objectId":{"name":"oEnemyTurret","path":"objects/oEnemyTurret/oEnemyTurret.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":90.0,"scaleX":1.0,"scaleY":1.0,"x":40.0,"y":273.0,},
         {"$GMRInstance":"v2","%Name":"inst_4E7A894A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4E7A894A","objectId":{"name":"oEnemyTurret","path":"objects/oEnemyTurret/oEnemyTurret.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":90.0,"scaleX":1.0,"scaleY":1.0,"x":57.0,"y":273.0,},
@@ -64,15 +64,15 @@
         {"$GMRInstance":"v2","%Name":"inst_DF54ABF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_DF54ABF","objectId":{"name":"oSpikeBlocks","path":"objects/oSpikeBlocks/oSpikeBlocks.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":-90.0,"scaleX":1.0,"scaleY":1.0,"x":335.0,"y":225.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"CollisionMap","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"CollisionMap","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
-          -11,47,1,4,-21,28,1,8,-6,47,-11,28,1,38,-21,0,1,16,-6,47,-33,0,3,40,28,8,-4,47,-35,0,2,40,8,-3,47,-36,
-          0,4,40,8,47,47,-3,20,1,36,-33,0,1,16,-5,47,1,2,-10,20,5,36,0,0,34,36,-18,0,4,16,47,47,4,-13,28,5,38,
-          0,0,40,25,-18,0,4,40,8,47,24,-17,0,2,17,36,-18,0,3,16,47,24,-5,0,1,42,-4,0,1,42,-4,0,4,42,0,16,24,-18,
-          0,5,16,47,24,0,43,-3,33,6,31,33,33,22,20,3,-4,20,4,3,20,1,24,-18,0,3,16,47,24,-8,0,1,16,-9,47,1,24,-18,
-          0,4,16,47,2,36,-3,0,5,34,36,0,0,16,-9,47,1,24,-18,0,4,16,47,47,24,-3,0,5,16,24,0,0,16,-9,47,1,24,-18,
-          0,4,40,8,47,24,-3,0,5,16,24,0,0,16,-9,47,1,24,-19,0,3,16,47,24,-3,0,5,16,24,0,0,16,-9,47,1,24,-19,0,
-          3,16,47,24,-3,0,5,16,24,0,0,16,-8,47,2,4,38,-6,0,2,34,36,-11,0,3,16,47,2,-3,20,5,1,24,0,0,40,-8,28,1,
-          38,-7,0,2,16,24,-11,0,1,16,-6,47,1,24,-18,0,3,34,1,24,-11,0,1,16,-6,47,1,24,-7,0,2,34,36,-9,0,3,16,47,
-          24,-10,0,2,34,1,-6,47,1,2,-7,20,2,1,2,-9,20,3,1,47,2,-10,20,1,1,-81,47,
+          -12,47,1,4,-20,28,1,8,-10,47,1,4,-7,28,1,38,-20,0,1,16,-6,47,-4,28,1,38,-28,0,3,40,28,8,-4,47,-35,0,
+          2,40,8,-3,47,-36,0,4,40,8,47,47,-37,0,3,16,47,47,-14,20,5,36,0,0,34,36,-18,0,4,16,47,47,4,-13,28,6,38,
+          0,0,40,10,36,-17,0,4,40,8,47,24,-17,0,2,16,24,-18,0,3,16,47,24,-5,0,1,42,-4,0,1,42,-4,0,4,42,0,16,24,
+          -18,0,5,16,47,24,0,43,-3,33,6,31,33,33,22,20,3,-4,20,4,3,20,1,24,-18,0,3,16,47,24,-8,0,1,16,-9,47,1,
+          24,-18,0,4,16,47,2,36,-3,0,5,34,36,0,0,16,-9,47,1,24,-18,0,4,16,47,47,24,-3,0,5,16,24,0,0,16,-9,47,1,
+          24,-18,0,4,40,8,47,24,-3,0,5,16,24,0,0,16,-9,47,1,24,-19,0,3,16,47,24,-3,0,5,16,24,0,0,16,-9,47,1,24,
+          -19,0,3,16,47,24,-3,0,5,16,24,0,0,16,-8,47,2,4,38,-6,0,2,34,36,-11,0,3,16,47,2,-3,20,5,1,24,0,0,40,-8,
+          28,1,38,-7,0,2,16,24,-11,0,1,16,-6,47,1,24,-18,0,3,34,1,24,-11,0,1,16,-6,47,1,24,-7,0,2,34,36,-9,0,3,
+          16,47,24,-10,0,2,34,1,-6,47,1,2,-7,20,2,1,2,-9,20,3,1,47,2,-10,20,1,1,-81,47,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tilesetBlue","path":"tilesets/tilesetBlue/tilesetBlue.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"Tiles_1","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
           -165,-2147483648,-17,0,-23,-2147483648,-17,0,-23,-2147483648,-17,0,-23,-2147483648,-17,0,-23,-2147483648,

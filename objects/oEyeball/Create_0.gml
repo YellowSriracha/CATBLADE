@@ -11,10 +11,11 @@ if room = RoomBlueFinalDoor {
 		instance_destroy();	
 	}
 } else {
-	with instance_find(oEnemyEyeballHolder,0){
-		instance_destroy();	
-	}
+	
 	if global.mapEvents[image_index] = 1 {
 		instance_destroy();	
+		with instance_find(oEnemyEyeballHolder,0){
+			instance_destroy();	
+		}
 	}	
 }
