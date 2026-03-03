@@ -23,7 +23,11 @@ if image_alpha >= 1  {
 	
 	if y < 312 and !collected{
 		y += 1;	
-	} else {
+	} else if collected {
 		framesSinceCollected++;	
 	}
+}
+
+if framesSinceCollected > 600{
+	room_goto(RoomCredits)	
 }

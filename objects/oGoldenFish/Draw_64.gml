@@ -5,7 +5,5 @@ if framesSinceCollected > 210 {
 	draw_set_alpha(1);
 	alpha += 0.01;
 	
-	if framesSinceCollected > 600{
-		room_goto(RoomCredits)	
-	}
+	
 }

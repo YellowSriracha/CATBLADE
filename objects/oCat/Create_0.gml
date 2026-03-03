@@ -353,7 +353,7 @@ function die(_direction = undefined){
 		}
 	}
 	var _body = instance_create_layer(x,y,layer,oCatBody);
-	if !is_undefined(_direction) {
+	if _direction != undefined {
 		with _body {
 			setDirection(_direction);
 		}

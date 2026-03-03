@@ -1,6 +1,9 @@
 if !collided{
 	collided = true;
 	if !oCat.slashing {
-		oCat.die(scrVectorAngle(velocity.x,velocity.y));
+		with oCat{
+			//die(scrVectorAngle(other.velocity.x,other.velocity.y));
+			die();
+		}
 	}
 }
