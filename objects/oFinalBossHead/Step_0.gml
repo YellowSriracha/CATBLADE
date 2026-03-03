@@ -1,4 +1,3 @@
-event_inherited();
 
 if hitstunFrames > 0 hitstunFrames -=1;
 
@@ -14,6 +13,9 @@ if !alive {
 		image_alpha -= 0.1;
 		oFinalBossPaw1.image_alpha -= 0.1;
 		oFinalBossPaw2.image_alpha -= 0.1;
+		if deathFrames > 1300 {
+			
+		}
 	}
 	
 }

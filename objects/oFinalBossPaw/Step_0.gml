@@ -1,19 +1,49 @@
 if !global.paused{
 	switch(state){
-		case BossPhase.UPANDDOWN:
+		case BossPhase.INTRO:
+			if !instance_exists(oFadeInFromBlack){
+				t+=1; 
+				scrMusicStart(track3);
+			}
+			if t > 0 and t%10==0{
+				image_alpha += 0.1;
+				oFinalBossHead.image_alpha += 0.05;
+			}
+			if image_alpha >= 1{
+				stateChange(BossPhase.UPANDDOWN);
+			}
 		
+		break;
+		
+		case BossPhase.UPANDDOWN:
+			
 			ysp = yDir * 4;
+			if oFinalBossHead.hp < 4 {
+				ysp = yDir * 8;
+			} if oFinalBossHead.hp < 10 {
+				ysp = yDir * 6;
+			}
 			if xDir == 0 xsp = 0;
 			if hitstop <= 0{
 				if bbox_bottom + ysp > bossfloorlevel {
+					if !audio_is_playing(sfxThud){
+						scrPlaySound(sfxThud2);
+					}
 					layer_set_visible(screenshake,true);
 					alarm[0] = 30;
+					
 					ysp = bossfloorlevel - bbox_bottom;
+					if global.slowmoActive {
+						ysp *= 2;	
+					}
 					yDir = -1;
 					xsp = round(random_range(-1,1))*2;
 					xDir = sign(xsp);
 					hitstop = 20;
-				} else if bbox_top + ysp < bosstoplevel {	
+				} else if bbox_top + ysp <= bosstoplevel {	
+					if !audio_is_playing(sfxThud){
+						scrPlaySound(sfxThud2);
+					}
 					layer_set_visible(screenshake,true);
 					alarm[0] = 30;
 					ysp = bosstoplevel - bbox_top;
@@ -46,7 +76,9 @@ if !global.paused{
 		}
 		if hitstop > 0 {
 			_xsp  = 0;
-			_ysp = 0;
+			if hitstop < 20{
+				_ysp = 0;
+			}
 			hitstop --;
 		} 
 
@@ -69,6 +101,8 @@ if !global.paused{
 		y += _ysp;
 
 		checkPlayerCrushed()
+	} else {
+		if image_alpha <=0 instance_destroy()	
 	}
 }else {
 	//alarm[0]+=1;	

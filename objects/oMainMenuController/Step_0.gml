@@ -1,5 +1,5 @@
 
-if t == 30 {
+if t == 10 {
 	scrMusicStart(CatBlade_start_screen_with_purr_loop);
 }
 

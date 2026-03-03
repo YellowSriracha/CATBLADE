@@ -1,1 +1,2 @@
-scrMusicStart(track3)
+scrMusicPause()
+global.bgm = noone;

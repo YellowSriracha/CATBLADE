@@ -1,17 +1,19 @@
 event_inherited();
-
+image_alpha = 0;
 hitstunFrames = 0;
-hp = 2;
+hp = 12;
 deathFrames = 0;
 if hp = 0 alive = false;
 
-scrOnPause(){
-	
+
+function onPlayerReset(){
+	return 0;	
+}
+
+function onPause(){
 	
 }
 
-
-scrOnUnpause(){
-	
+function onUnpause(){
 	
 }

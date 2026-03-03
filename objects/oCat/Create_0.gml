@@ -204,6 +204,7 @@ function stateChange(_state){
 			slashesReady -= 1;
 			slashing = true;
 			onWall = false;
+			onCeiling = false;
 			var _angle = point_direction(x,y,targetEnemy.x,targetEnemy.y);
 			xsp = lengthdir_x(slashspeed,_angle);
 			ysp = lengthdir_y(slashspeed,_angle);
@@ -330,27 +331,47 @@ function SetSpawnPoint(){
 }
 
 function die(_direction = undefined){
-	if alive{
-		var _body = instance_create_layer(x,y,layer,oCatBody);
-		if !is_undefined(_direction) {
-			_body.setDirection(_direction);
+	if !alive return 1;
+	
+	if instance_exists(oLivesCounter){
+		with oLivesCounter {
+			loseLife();
 		}
-		alive = false;
-		scrPlaySound(sfxDeathMeow,,,random_range(0.5,1.5))
-		grav = defaultgrav;
-		slashing = false;
-		alarm[0] = -1;
-		stateChange(PlayerState.GROUND);
-		xsp = 0;
-		ysp = 0;
-		if global.slowmoActive{
-			scrEndSlowMo();
-			slowmoDuration = 0;
-		}
-		x = respawnPointX;
-		y = respawnPointY;
-		scrOnDeath();
 	}
+	if instance_exists(oRespawnPointBossFight){
+		var _chose = -1;
+		for (var i = 0; i < instance_number(oRespawnPointBossFight); i++){
+			with instance_find(oRespawnPointBossFight,i){
+				if distance_to_object(oFinalBossPaw) > 40 {
+					_chose = i;	
+					oCat.respawnPointX = x;
+					oCat.respawnPointY = y;
+					i = instance_number(oRespawnPointBossFight)+1;
+				}
+				
+			}
+		}
+	}
+	var _body = instance_create_layer(x,y,layer,oCatBody);
+	if !is_undefined(_direction) {
+		_body.setDirection(_direction);
+	}
+	alive = false;
+	scrPlaySound(sfxDeathMeow,,,random_range(0.7,1.5))
+	grav = defaultgrav;
+	slashing = false;
+	alarm[0] = -1;
+	stateChange(PlayerState.GROUND);
+	xsp = 0;
+	ysp = 0;
+	if global.slowmoActive{
+		scrEndSlowMo();
+		slowmoDuration = 0;
+	}
+	x = respawnPointX;
+	y = respawnPointY;
+	scrOnDeath();
+	
 }	
 
 function pause() {

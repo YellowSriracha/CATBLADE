@@ -21,6 +21,10 @@ aggroCheck = function(){
 	}
 }
 
+onPlayerReset = function(){
+	aggro = false;
+}
+
 die = function(){
 	dieDefault();
 	for(var i = 0; i < 4;i++){
