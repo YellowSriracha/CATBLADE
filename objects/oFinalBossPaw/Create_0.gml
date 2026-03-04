@@ -48,4 +48,8 @@ function checkPlayerCrushed(){
 	}
 	
 }
+
+function generateXsp(){
+	return round(random_range(-1,1))*2;
+}
 stateChange(BossPhase.INTRO)

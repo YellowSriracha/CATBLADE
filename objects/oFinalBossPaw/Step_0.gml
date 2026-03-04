@@ -37,7 +37,7 @@ if !global.paused{
 						ysp *= 2;	
 					}
 					yDir = -1;
-					xsp = round(random_range(-1,1))*2;
+					xsp = generateXsp();
 					xDir = sign(xsp);
 					hitstop = 20;
 				} else if bbox_top + ysp <= bosstoplevel {	
@@ -48,7 +48,7 @@ if !global.paused{
 					alarm[0] = 30;
 					ysp = bosstoplevel - bbox_top;
 					yDir = 1;
-					xsp = round(random_range(-1,1))*2;
+					xsp = generateXsp();
 					xDir = sign(xsp);
 					hitstop = 20;
 				}
@@ -92,15 +92,33 @@ if !global.paused{
 				}
 			} else {
 				if sign(_xsp) == oCat.dir{
-					oCat.x += _xsp*3;
+					//oCat.x += _xsp*3;
 				}
 			}
 		}
 
 		x += _xsp;
 		y += _ysp;
-
+		
 		checkPlayerCrushed()
+		
+		if place_meeting(x,y,oCat){
+			var _leftOrRight = -1;
+			if abs(oCat.x - bbox_right) < abs(oCat.x - bbox_left){
+				_leftOrRight = 1;
+			}
+			if _leftOrRight == -1{
+				oCat.x = bbox_left - (oCat.bbox_right - oCat.x);
+				oCat.dir = 1;
+				oCat.onWall = true;
+			} else {
+				oCat.x = bbox_right + (oCat.bbox_right - oCat.x);
+				oCat.dir = -1;
+				oCat.onWall = true;
+			}
+		}
+
+		
 	} else {
 		if image_alpha <=0 instance_destroy()	
 	}

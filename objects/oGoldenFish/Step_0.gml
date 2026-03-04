@@ -28,6 +28,3 @@ if image_alpha >= 1  {
 	}
 }
 
-if framesSinceCollected > 600{
-	room_goto(RoomCredits)	
-}

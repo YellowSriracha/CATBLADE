@@ -15,7 +15,7 @@ draw_set_font(fontCreditssmall);
 draw_text(center,_creditsY,"Design, Art, and Programming by")
 _creditsY += 80;
 draw_set_font(fontCredits);
-draw_set_color(textboxtextcolor)
+draw_set_color(textColor)
 draw_text(center,_creditsY,"Daniel O'Connor-D'Amico")
 
 _creditsY += 200;
@@ -25,7 +25,7 @@ draw_set_font(fontCreditssmall);
 draw_text(center,_creditsY,"Additional Programming by")
 _creditsY += 80;
 draw_set_font(fontCredits);
-draw_set_color(textboxtextcolor)
+draw_set_color(textColor)
 draw_text(center,_creditsY,"Matt B")
 
 _creditsY += 200;
@@ -34,7 +34,7 @@ draw_set_font(fontCreditssmall);
 draw_text(center,_creditsY,"Music by")
 _creditsY += 80;
 draw_set_font(fontCredits);
-draw_set_color(textboxtextcolor)
+draw_set_color(textColor)
 draw_text(center,_creditsY,"Ed Varga")
 
 _creditsY += 300;

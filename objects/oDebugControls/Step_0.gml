@@ -1,4 +1,4 @@
-if true{
+if false{
 	if keyboard_check_pressed(ord("R")){
 		global.mapController.lookup = true;
 		room_goto(rmMainMenu);

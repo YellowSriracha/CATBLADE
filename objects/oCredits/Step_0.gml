@@ -1,3 +1,3 @@
 if global.input.selectKeyHeld {
-	scrollY -= 4;	
+	scrollY -= 4;
 }

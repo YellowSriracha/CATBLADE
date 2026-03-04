@@ -1,7 +1,7 @@
 event_inherited();
 image_alpha = 0;
 hitstunFrames = 0;
-hp = 12;
+hp = 2;
 deathFrames = 0;
 if hp = 0 alive = false;
 
