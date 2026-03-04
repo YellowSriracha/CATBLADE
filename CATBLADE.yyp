@@ -333,6 +333,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"rmBoot","path":"rooms/rmBoot/rmBoot.yy",},},
     {"roomId":{"name":"rmMainMenu","path":"rooms/rmMainMenu/rmMainMenu.yy",},},
+    {"roomId":{"name":"RoomPurpleRight4","path":"rooms/RoomPurpleRight4/RoomPurpleRight4.yy",},},
     {"roomId":{"name":"RoomFinalBoss","path":"rooms/RoomFinalBoss/RoomFinalBoss.yy",},},
     {"roomId":{"name":"RoomCredits","path":"rooms/RoomCredits/RoomCredits.yy",},},
     {"roomId":{"name":"RoomBlueRight","path":"rooms/RoomBlueRight/RoomBlueRight.yy",},},
@@ -374,7 +375,6 @@
     {"roomId":{"name":"RoomPurpleRight1","path":"rooms/RoomPurpleRight1/RoomPurpleRight1.yy",},},
     {"roomId":{"name":"RoomPurpleRight2","path":"rooms/RoomPurpleRight2/RoomPurpleRight2.yy",},},
     {"roomId":{"name":"RoomPurpleRight3","path":"rooms/RoomPurpleRight3/RoomPurpleRight3.yy",},},
-    {"roomId":{"name":"RoomPurpleRight4","path":"rooms/RoomPurpleRight4/RoomPurpleRight4.yy",},},
     {"roomId":{"name":"RoomSlowMoGateBottom","path":"rooms/RoomSlowMoGateBottom/RoomSlowMoGateBottom.yy",},},
     {"roomId":{"name":"RoomTransitionRedPurple2","path":"rooms/RoomTransitionRedPurple2/RoomTransitionRedPurple2.yy",},},
     {"roomId":{"name":"RoomzUpgradePurpleSlowmo","path":"rooms/RoomzUpgradePurpleSlowmo/RoomzUpgradePurpleSlowmo.yy",},},

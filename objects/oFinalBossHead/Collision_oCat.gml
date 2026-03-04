@@ -22,7 +22,7 @@ if oCat.slashing and hitstunFrames <= 0{
 		}
 
 		
-	} else if hp == 6{
+	} else if hp == 3{
 		with instance_create_layer(100,80,layer,oEnemyLauncher){
 			aggroCondition = function(){return image_alpha >= 1;}	
 			image_alpha = 0;

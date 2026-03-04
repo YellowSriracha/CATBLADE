@@ -18,12 +18,13 @@ if !global.paused{
 		case BossPhase.UPANDDOWN:
 			
 			ysp = yDir * 4;
-			if oFinalBossHead.hp < 4 {
+			if oFinalBossHead.hp < 3 {
 				ysp = yDir * 8;
-			} if oFinalBossHead.hp < 10 {
+			} if oFinalBossHead.hp < 7 {
 				ysp = yDir * 6;
 			}
 			if xDir == 0 xsp = 0;
+			//lol combine these later
 			if hitstop <= 0{
 				if bbox_bottom + ysp > bossfloorlevel {
 					if !audio_is_playing(sfxThud){
