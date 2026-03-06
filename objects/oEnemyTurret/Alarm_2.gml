@@ -17,4 +17,4 @@ with _this {
 }
 
 image_index = 0;
-alarm[2] = global.slowmoActive ? 135 : 45
+alarm[2] = global.slowmoActive ? 165 : 55

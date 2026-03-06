@@ -413,8 +413,9 @@ function checkTargetValid(_target = noone){
 	if _target == oFinalBossHead {
 		return oFinalBossHead.hitstunFrames <= 0;
 	}
-	if _target == noone return false;
 	if _target == oEnemyTurret return false;
+	if _target == noone return false;
+	
 	if onWall {
 		if dir == 1 and _target.x > x {
 			return false;	

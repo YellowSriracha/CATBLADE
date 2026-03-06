@@ -16,10 +16,10 @@
   "isDnd":false,
   "layers":[
     {"$GMRTileLayer":"","%Name":"CollisionMap","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"CollisionMap","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
-          -155,47,1,4,-4,28,-34,47,2,4,38,-4,0,-32,47,3,4,28,38,-5,0,-30,47,3,4,28,38,-7,0,-7,28,4,8,47,47,4,-16,
-          28,4,8,47,4,38,-16,0,4,40,28,8,24,-16,0,3,16,4,38,-19,0,2,16,24,-16,0,2,16,24,-20,0,2,16,24,-16,0,2,
-          16,24,-20,0,2,16,24,-16,0,2,18,38,-20,0,2,16,24,-16,0,1,44,-21,0,2,40,38,-148,0,1,34,-30,20,1,36,-5,
-          0,4,34,36,0,16,-30,47,1,24,-4,0,5,34,1,2,20,1,-30,47,1,2,-4,20,1,1,-124,47,
+          -156,47,1,4,-3,28,-32,47,1,4,-3,28,1,38,-3,0,-30,47,3,4,28,38,-7,0,-29,47,2,4,38,-9,0,-7,28,1,8,-3,47,
+          1,4,-14,28,4,8,47,47,24,-17,0,5,40,8,47,4,38,-14,0,4,40,8,4,38,-18,0,3,40,8,24,-16,0,2,16,24,-20,0,2,
+          16,24,-16,0,2,16,24,-20,0,2,16,24,-16,0,2,18,38,-20,0,2,40,25,-16,0,1,44,-22,0,1,44,-148,0,1,34,-30,
+          20,1,36,-5,0,4,34,36,0,16,-30,47,1,24,-4,0,5,34,1,2,20,1,-30,47,1,2,-4,20,1,1,-124,47,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tilesetRed","path":"tilesets/tilesetRed/tilesetRed.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_45A785DF_3_1_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_45A785DF_3_1_1_1_1","objectId":{"name":"oCat","path":"objects/oCat/oCat.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":25.0,"y":262.0,},

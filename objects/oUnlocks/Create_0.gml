@@ -30,3 +30,31 @@ function resetUnlocks(){
 		ceilingclimb= 0;
 	}
 }
+
+function resetCollectibles(){
+	with global.collectibles{
+		blue = 0;
+		red = 0;
+		green = 0;
+		yellow = 0;
+		magenta = 0;
+		cyan = 0;
+		white = 0;
+		black = 0;
+	}	
+}
+
+function countCollectibles(){
+	var _count = 0;
+	with global.collectibles{
+		_count += blue;
+		_count += red;
+		_count += green;
+		_count += yellow;
+		_count += magenta;
+		_count += cyan;
+		_count += white;
+		_count += black;
+	}	
+	return _count;
+}

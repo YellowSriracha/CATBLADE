@@ -28,8 +28,8 @@
     {"$GMRTileLayer":"","%Name":"Tiles_2","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_2","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
           -544,0,3,34,20,36,-37,0,3,16,47,24,-37,0,3,40,28,38,-67,0,4,34,20,20,36,-12,0,1,34,-3,20,1,36,-5,0,-3,
           20,1,36,-7,0,7,34,20,20,1,47,47,2,-12,20,5,1,4,28,28,38,-5,0,-3,47,3,2,20,36,-5,0,1,16,-19,47,1,24,-8,
-          0,-5,47,1,24,-5,0,1,40,-3,28,1,8,-15,47,1,24,-8,0,-5,47,1,24,-9,0,1,40,-15,28,1,38,-8,0,-5,47,1,24,-34,
-          0,
+          0,-5,47,1,24,-5,0,1,40,-3,28,1,8,-15,47,1,24,-7,0,1,34,-5,47,1,24,-9,0,1,40,-15,28,1,38,-5,0,3,34,20,
+          1,-5,47,1,24,-31,0,3,16,47,47,
         ],"TileDataFormat":1,},"tilesetId":{"name":"tilesetPurple","path":"tilesets/tilesetPurple/tilesetPurple.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRTileLayer":"","%Name":"CollisionMap","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"CollisionMap","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
           -12,47,1,24,-7,0,-5,-2147483648,-4,0,1,16,-22,47,1,24,-7,0,-5,-2147483648,-4,0,1,16,-22,47,1,24,-7,0,

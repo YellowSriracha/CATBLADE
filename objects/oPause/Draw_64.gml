@@ -14,7 +14,7 @@ if global.paused and !global.pauseDisabled{
 	
 	
 	var _y = _tside + 180;
-	var _x = _lside + 70;
+	var _x = _lside + 100;
 	
 	for (var i = 0; i < 5; i++){
 		var _draw = false;
@@ -37,18 +37,22 @@ if global.paused and !global.pauseDisabled{
 		}
 		if _draw{
 			draw_sprite_ext(upgradeIcons[i],0,_x,_y,4,4,0,c_white,1)
+		} else {
+			draw_sprite_ext(sUpgradeIconMissing,0,_x,_y,4,4,0,c_white,0.3)
 		}
-		_x+=100;
+		_x+=150;
 	}
 	
-	_y += 180;
+	_y += 220;
 	_x = _lside + 50;
 	if global.unlockables.slash == 1 {
 		draw_sprite_ext(sInventorySword,0,_x,_y,4,4,0,c_white,1);
+	} else {
+		draw_sprite_ext(sInventorySwordMissing,0,_x,_y,4,4,0,c_white,0.2);
 	}
 	
-	_y += 180;
-	_x = _lside + 70;
+	_y += 160;
+	_x = _lside + 50;
 	
 	for (var i = 0; i < 8; i++){
 		var _draw = false;
@@ -80,8 +84,10 @@ if global.paused and !global.pauseDisabled{
 		}
 		if _draw{
 			draw_sprite_ext(sCollectibles,i,_x,_y,4,4,0,c_white,1)
+		} else {
+			draw_sprite_ext(sCollectiblesMissing,i,_x,_y,4,4,0,c_white,0.2)
 		}
-		_x+=100;
+		_x+=110;
 	}
 	
 
