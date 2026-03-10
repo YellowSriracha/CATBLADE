@@ -4,7 +4,7 @@ if t == 10 {
 }
 
 //inputs 
-if !transitioning and t > 30{
+if !transitioning and t > 5{
 	if global.input.downKeyPressed {
 		if selection < (numOptions - 1) selection += 1;	
 	} else if global.input.upKeyPressed {
@@ -12,7 +12,9 @@ if !transitioning and t > 30{
 	}
 	if global.input.selectKey {
 		if selection == 1{
-			scrPlaySound(sfxDenyBeep);	
+			transitioning = true;
+			global.musicVolume = 0;
+			scrMusicSetVolume(600);
 		} else {
 			transitioning = true;
 			global.musicVolume = 0;
@@ -47,7 +49,8 @@ if transitioning {
 			global.mapController.lookup = true;
 			room_goto(RoomIntro)			
 		} else {
-			
+			global.mapController.lookup = true;
+			room_goto(rmPassword)			
 			
 		}
 		

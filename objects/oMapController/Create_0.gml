@@ -20,7 +20,7 @@ mapData = [	[noone, RoomBlueLeft3, RoomBlueLeft2, RoomBlueAbove, RoomBlueAbove2,
 			[noone, RoomSplitRedLeft2, RoomSplitRedLeft, RoomSplitRed, RoomSplitRedRight, RoomSlowMoGate, RoomCatbladeNeck4, noone],
 			[noone, noone, noone, noone, RoomTransitionRedPurple, noone, RoomTransitionRedPurple2, RoomPurpleDoubleSlash],
 			[noone,RoomPurpleSecret,RoomPurpleSlowChallenge1,RoomPurpleLeft1,RoomSplit,RoomPurpleRight1, RoomPurpleRight3, RoomPurpleRight4],
-			[noone,RoomPurpleFastClimb,RoomPurpleSlowChallenge2,RoomPurpleLeft2,RoomSlowMoGateBottom,RoomPurpleRight2, RoomzUpgradePurpleSlowmo, RoomPurpleRightBottomCorner]
+			[noone,RoomPurpleFastClimb,RoomPurpleSlowChallenge2,RoomPurpleLeft2,RoomSlowMoGateBottom,RoomPurpleRight2, RoomUpgradePurpleSlowmo, RoomPurpleRightBottomCorner]
 		  ]
 
 global.mapEvents = [0,0,0,0,0,0,0,0];

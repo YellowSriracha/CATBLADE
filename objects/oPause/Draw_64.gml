@@ -96,7 +96,7 @@ if global.paused and !global.pauseDisabled{
 	_x = _lside + 50;
 	draw_text(_lside+(textBoxWidth/2), _y + ypadding,"Password")
 	_y+=80;
-	draw_text(_lside+(textBoxWidth/2), _y + ypadding,string(password))
+	draw_text(_lside+(textBoxWidth/2), _y + ypadding,string(global.currentPassword))
 	
 	
 	

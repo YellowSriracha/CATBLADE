@@ -1,0 +1,1 @@
+global.pauseDisabled = true;

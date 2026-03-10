@@ -4,3 +4,5 @@ text = "Double Slash unlocked!\n\nA forbidden technique that allows you to attac
 if global.unlockables.doubleslash {
 	instance_destroy();	
 }
+
+glowColor = c_yellow;

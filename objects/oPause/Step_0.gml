@@ -3,7 +3,7 @@
 if !global.pauseDisabled and oInput.pausePressed {
 	
 	if !global.paused {
-		password = scrPackSaveDataToHexadecimalPassword(global.saveData);
+		scrPasswordCreate()
 		scrOnPause();
 		global.paused = true;
 	} else {

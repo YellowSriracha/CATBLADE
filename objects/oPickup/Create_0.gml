@@ -1,5 +1,5 @@
 text = "";
-
+glowColor = c_white;
 startingY = y;
 t = 0;
 
